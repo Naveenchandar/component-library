@@ -1,8 +1,8 @@
 :root {
     --primary-color: #006D77;
-    --error: rgb(241, 55, 55);
-    --warning: rgb(247, 184, 67);
-    --success: green;
+    --red: #f13737;
+    --orange: #f7b843;
+    --green: #008000;
     --white: #fff;
     --black:#000;
 }
@@ -45,19 +45,19 @@ body {
 }
 
 .alert_primary {
-    background-color: #006D77;
+    background-color: var(--primary-color);
 }
 
 .alert_warn {
-    background-color: orange;
+    background-color: var(--orange);
 }
 
 .alert_error {
-    background-color: red;
+    background-color: var(--red);
 }
 
 .alert_success {
-    background-color: green;
+    background-color: var(--green);
 }
 
 /* Alert with outlined border */
@@ -68,16 +68,16 @@ body {
 }
 
 .alert_warn_outlined {
-    border: 1px solid var(--warning);
+    border: 1px solid var(--orange);
     color: var(--warning);
 }
 
 .alert_error_outlined {
-    border: 1px solid var(--error);
+    border: 1px solid var(--red);
     color: var(--error);
 }
 
 .alert_success_outlined {
-    border: 1px solid var(--success);
+    border: 1px solid var(--green);
     color: var(--success);
 }
