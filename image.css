@@ -1,0 +1,36 @@
+.image_div {
+    background-color: #F5F7F9;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.img_squared, .img_rounded {
+    height: 9rem;
+    width: 9rem;
+    object-fit: cover;
+}
+
+.img_rounded {
+    border-radius: 50%;
+}
+
+.img_squared {
+    object-fit: cover;
+}
+
+.img_responsive {
+    width: 100%;
+    height: auto;
+}
+
+.image_div, .img_squared {
+    border-radius: 4px;
+}
+
+.img_rounded, .img_squared {
+    margin: 1rem;
+}
