@@ -12,14 +12,11 @@
     height: 9rem;
     width: 9rem;
     object-fit: cover;
+    margin: 1rem;
 }
 
 .img_rounded {
     border-radius: 50%;
-}
-
-.img_squared {
-    object-fit: cover;
 }
 
 .img_responsive {
@@ -27,10 +24,6 @@
     height: auto;
 }
 
-.image_div, .img_squared {
+.image_group, .img_squared {
     border-radius: 4px;
-}
-
-.img_rounded, .img_squared {
-    margin: 1rem;
 }
