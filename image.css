@@ -1,6 +1,6 @@
-.image_group {
+.img_group {
     background-color: #F5F7F9;
-    min-height: 100px;
+    min-height: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;
