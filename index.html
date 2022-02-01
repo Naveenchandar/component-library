@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Naveen Chandar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Landing Page using HTML, CSS & Javascript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <section class="container_body">
+        <!-- ==== HEADER ==== -->
+        <header class="container header">
+            <!-- ==== NAVBAR ==== -->
+            <nav class="nav flex_row justify_spacebtw">
+                <div class="logo">
+                    <h2>Naveen Ui.</h2>
+                </div>
+
+                <div class="nav_menu" id="nav_menu">
+                    <button class="close_btn" id="close_btn">
+                        <i class="ri-close-fill"></i>
+                    </button>
+
+                    <ul class="nav_menu_list flex align_center">
+                        <li class="nav_menu_item">
+                            <a href="#" class="nav_menu_link">Docs</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="toggle_btn" id="toggle_btn">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </nav>
+        </header>
+
+        <section class="wrapper">
+            <div class="container">
+                <div class="grid_cols_2 w-100 h-100">
+                    <div class="grid_item_1">
+                        <h1 class="main_heading">
+                            Welcome to <span>Naveen Ui.</span>
+                            <br />
+                            Develop anything.
+                        </h1>
+                        <p class="info-text">
+                            Build a beautiful, modern website with flexible components built
+                            from scratch.
+                        </p>
+
+                        <div class="btn_wrapper flex">
+                            <button class="btn get_start_btn flex_row">
+                                Get Started<i class="ri-arrow-right-line"></i>
+                            </button>
+
+                            <button class="btn github_btn">Github</button>
+                        </div>
+                    </div>
+                    <div class="grid_item_2 w-100 h-100">
+                        <div class="img_wrapper">
+                            <img src="./assets//build-websites.svg" alt="Build Websites" class="w-100 h-100" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+    <!-- <footer class="footer text-center">
+        <div class="footer-header">Made with <span class="primary-text-color">&lt;/&gt;</span> by Naveen Chandar</div>
+        <ul class="inline-list list-style-none footer-social-icons">
+            <li class="list-inline-item"><a class="link-no-style" href="https://github.com/AnkitaBagale"><i
+                        class="fab fa-github"></i></a></li>
+            <li class="list-inline-item"><a class="link-no-style" href="https://twitter.com/AnkitaB1108"><i
+                        class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a class="link-no-style"
+                    href="https://www.linkedin.com/in/ankita-bagale1108/"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+        <div class="text-light-weight body-cp-md footer-copyright">© 2021 Naveen Ui</div>
+    </footer> -->
+</body>
+<!-- <script>
+    const copyRight = document.getElementsByClassName('footer-copyright');
+    copyRight[0].innerHTML = `© ${new Date().getFullYear()} Naveen Ui`
+</script> -->
+
+</html>
