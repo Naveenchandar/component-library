@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="Naveen Chandar">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Naveen Chandar">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/variables.css">
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="../sidebar/sidebar.css">
-    <link rel="stylesheet" href="./alert.css">
-    <title>Alert</title>
+    <link rel="stylesheet" href="./input.css">
+    <title>Input</title>
 </head>
 
-<body id="alert">
+<body id="input">
     <section id="sidebar">
         <header class="sb_header" id="header">
             <div class="sb_header_toggle">
@@ -89,7 +89,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="../image/image.html#image" class="sb_nav_link">
+                                        <a href="#" class="sb_nav_link">
                                             <i class='bx bx-bar-chart-alt-2 sb_nav_icon'></i>
                                             <span class="nav_name">Image</span>
                                         </a>
@@ -123,40 +123,131 @@
             </div>
         </main>
     </section>
-    <!-- Alert with background color -->
-    <div class="alert_container flex_column">
-        <div class="alert alert_info">
-            <p>Info - This is Info Alert !!</p>
+    <section class="input_section flex flex_column align_center justify_start">
+        <div class="input_container flex flex_column align_start">
+            <h4 class="component_subtitle">Input Primary</h4>
+            <div class="input_fields flex align_center justify_center">
+                <div class="input_group flex align_start">
+                    <label>Label</label>
+                    <input type="text" placeholder="input" class="input" />
+                </div>
+            </div>
         </div>
-        <div class="alert alert_primary">
-            <p>Primary - This is Primary Alert !!</p>
+        <br />
+        <div class="input_container flex flex_column align_start">
+            <h4 class="component_subtitle">Input Curved</h4>
+            <div class="input_fields flex align_center justify_center">
+                <div class="input_group flex align_start">
+                    <label>Label</label>
+                    <input type="text" placeholder="input" class="input input_curved" />
+                </div>
+            </div>
         </div>
-        <div class="alert alert_warn">
-            <p>Warning - This is Warning Alert !!</p>
+        <br />
+        <div class="input_container flex flex_column align_start">
+            <h4 class="component_subtitle">Input Disabled</h4>
+            <div class="input_fields flex align_center justify_center">
+                <div class="input_group flex align_start">
+                    <label>Label</label>
+                    <input type="text" placeholder="input" disabled class="input input_disabled" />
+                </div>
+            </div>
         </div>
-        <div class="alert alert_error">
-            <p>Error - This is Error Alert !!</p>
+        <br />
+        <div class="input_container flex flex_column align_start">
+            <h4 class="component_subtitle">Input Warning</h4>
+            <div class="input_fields flex align_center justify_center">
+                <div class="input_group flex align_start">
+                    <label>Label</label>
+                    <input type="text" placeholder="input" class="input input_warn" />
+                </div>
+            </div>
         </div>
-        <div class="alert alert_success">
-            <p>Success - This is Success Alert !!</p>
+        <br />
+        <div class="input_container flex flex_column align_start">
+            <h4 class="component_subtitle">Input Success</h4>
+            <div class="input_fields flex align_center justify_center">
+                <div class="input_group flex align_start">
+                    <label>Label</label>
+                    <input type="text" placeholder="input" class="input input_success" />
+                </div>
+            </div>
         </div>
-    </div>
+        <br />
+        <div class="input_container flex flex_column align_start">
+            <h4 class="component_subtitle">Input Error</h4>
+            <div class="input_fields flex align_center justify_center">
+                <div class="input_group flex align_start">
+                    <label>Label</label>
+                    <input type="text" placeholder="input" class="input input_error" />
+                </div>
+            </div>
+        </div>
+        <br />
+    </section>
     <br />
-    <!-- Alert with outlined border -->
-    <div class="alert_container flex_column">
-        <div class="alert alert_primary_outlined">
-            <p>Primary - This is Primary Alert !!</p>
+    <section class="input_section flex flex_column align_center justify_start">
+        <div class="input_container flex align_start">
+            <h4 class="component_subtitle">Material Input Primary</h4>
+            <div class="input_fields flex align_center justify_center">
+                <div class="input_group material_input flex align_start">
+                    <label class="material_label">Label</label>
+                    <input type="text" placeholder="input" class="input" />
+                </div>
+            </div>
         </div>
-        <div class="alert alert_warn_outlined">
-            <p>Warning - This is Warning Alert !!</p>
+        <br />
+        <div class="input_container flex">
+            <h4 class="component_subtitle">Material Input Curved</h4>
+            <div class="input_fields flex align_center justify_center">
+                <div class="input_group material_input flex align_start">
+                    <label class="material_label">Label</label>
+                    <input type="text" placeholder="input" class="input input_curved" />
+                </div>
+            </div>
         </div>
-        <div class="alert alert_error_outlined">
-            <p>Error - This is Error Alert !!</p>
+        <br />
+        <div class="input_container flex">
+            <h4 class="component_subtitle">Material Input Disabled</h4>
+            <div class="input_fields flex align_center justify_center">
+                <div class="input_group material_input flex align_start">
+                    <label class="material_label">Label</label>
+                    <input type="text" placeholder="input" class="input input_disabled" />
+                </div>
+            </div>
         </div>
-        <div class="alert alert_success_outlined">
-            <p>Success - This is Success Alert !</p>
+        <br />
+        <div class="input_container flex">
+            <h4 class="component_subtitle">Material Input Warning</h4>
+            <div class="input_fields flex align_center justify_center">
+                <div class="input_group material_input flex align_start">
+                    <label class="material_label label_warn">Label</label>
+                    <input type="text" placeholder="input" class="input input_warn" />
+                </div>
+            </div>
         </div>
-    </div>
+        <br />
+        <div class="input_container flex">
+            <h4 class="component_subtitle">Material Input Success</h4>
+            <div class="input_fields flex align_center justify_center">
+                <div class="input_group material_input flex align_start">
+                    <label class="material_label label_success">Label</label>
+                    <input type="text" placeholder="input" class="input input_success" />
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="input_container flex">
+            <h4 class="component_subtitle">Material Input Error</h4>
+            <div class="input_fields flex align_center justify_center">
+                <div class="input_group material_input flex align_start">
+                    <label class="material_label label_error">Label</label>
+                    <input type="text" placeholder="input" class="input input_error" />
+                </div>
+            </div>
+        </div>
+        <br />
+    </section>
 </body>
 
 </html>

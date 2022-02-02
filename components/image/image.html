@@ -4,19 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="Naveen Chandar">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="author" content="Naveen Chandar">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/variables.css">
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="../sidebar/sidebar.css">
-    <link rel="stylesheet" href="./alert.css">
-    <title>Alert</title>
+    <link rel="stylesheet" href="./image.css">
+    <title>Image</title>
 </head>
 
-<body id="alert">
+<body id="image">
     <section id="sidebar">
         <header class="sb_header" id="header">
             <div class="sb_header_toggle">
@@ -95,7 +94,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="sb_nav_link">
+                                        <a href="../input/input.html#input" class="sb_nav_link">
                                             <i class='bx bx-bar-chart-alt-2 sb_nav_icon'></i>
                                             <span class="nav_name">Input</span>
                                         </a>
@@ -123,40 +122,35 @@
             </div>
         </main>
     </section>
-    <!-- Alert with background color -->
-    <div class="alert_container flex_column">
-        <div class="alert alert_info">
-            <p>Info - This is Info Alert !!</p>
+    <section>
+        <div>
+            <h2>Squared Image</h2>
+            <div class="img_group flex_row">
+                <img src="https://images.unsplash.com/photo-1631027761930-bc3bcfd2be74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                    alt="image" class="img img_squared">
+                <img src="https://images.unsplash.com/photo-1643345360545-33f40f0e741f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1975&q=80"
+                    alt="image" class="img img_squared">
+            </div>
         </div>
-        <div class="alert alert_primary">
-            <p>Primary - This is Primary Alert !!</p>
+        <div>
+            <h2>Responsive Image</h2>
+            <div class="img_group flex_row">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1641641719834-5f1b8d2c7b75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1668&q=80"
+                        alt="responsive-image" class="img_responsive">
+                </div>
+            </div>
         </div>
-        <div class="alert alert_warn">
-            <p>Warning - This is Warning Alert !!</p>
+        <div>
+            <h2>Rounded Image</h2>
+            <div class="img_group flex_row">
+                <img src="https://images.unsplash.com/photo-1643182156615-e808c70a6289?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80"
+                    alt="image" class="img img_rounded">
+                <img src="https://images.unsplash.com/photo-1452570053594-1b985d6ea890?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+                    alt="image" class="img img_rounded">
+            </div>
         </div>
-        <div class="alert alert_error">
-            <p>Error - This is Error Alert !!</p>
-        </div>
-        <div class="alert alert_success">
-            <p>Success - This is Success Alert !!</p>
-        </div>
-    </div>
-    <br />
-    <!-- Alert with outlined border -->
-    <div class="alert_container flex_column">
-        <div class="alert alert_primary_outlined">
-            <p>Primary - This is Primary Alert !!</p>
-        </div>
-        <div class="alert alert_warn_outlined">
-            <p>Warning - This is Warning Alert !!</p>
-        </div>
-        <div class="alert alert_error_outlined">
-            <p>Error - This is Error Alert !!</p>
-        </div>
-        <div class="alert alert_success_outlined">
-            <p>Success - This is Success Alert !</p>
-        </div>
-    </div>
+    </section>
 </body>
 
 </html>

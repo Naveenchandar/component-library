@@ -1,9 +1,6 @@
 .img_group {
-    background-color: #F5F7F9;
+    background-color: var(--img-bg);
     min-height: 7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 1rem;
     margin-bottom: 1.5rem;
 }
@@ -20,7 +17,7 @@
 }
 
 .img_responsive {
-    width: 100%;
+    width: var(--width);
     height: auto;
 }
 
