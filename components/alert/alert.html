@@ -6,21 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Naveen Chandar">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/variables.css">
+    <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="../sidebar/sidebar.css">
-    <link rel="stylesheet" href="./avatar.css">
-    <title>Avatar</title>
+    <link rel="stylesheet" href="./alert.css">
+    <title>Alert</title>
 </head>
 
-<body id="avatar">
+<body id="alert">
     <section id="sidebar">
         <header class="sb_header" id="header">
             <div class="sb_header_toggle">
                 <i class='bx bx-menu' id="header-toggle"></i>
             </div>
-    
+
             <div class="sb_header_img">
                 <img src="assets/img/perfil.jpg" alt="">
             </div>
@@ -33,7 +35,7 @@
                             <i class='bx bx-layer sb_nav_logo_icon'></i>
                             <span class="sb_nav_logo_name">Naveen UI</span>
                         </a>
-    
+
                         <div class="sb_nav_list">
                             <div>
                                 <h3 class="sb_list_topic">Getting Started</h3>
@@ -49,7 +51,7 @@
                                             <i class='bx bx-grid-alt sb_nav_icon'></i>
                                             <span class="nav_name">What's New</span>
                                         </a>
-    
+
                                     </li>
                                 </ul>
                             </div>
@@ -75,7 +77,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="sb_nav_link">
+                                        <a href="../button/button.html#button" class="sb_nav_link">
                                             <i class='bx bx-bookmark sb_nav_icon'></i>
                                             <span class="nav_name">Button</span>
                                         </a>
@@ -106,10 +108,10 @@
                                     </li>
                                 </ul>
                             </div>
-    
+
                         </div>
                     </div>
-    
+
                     <a href="#" class="sb_nav_link">
                         <i class='bx bx-log-out sb_nav_icon'></i>
                         <span class="nav_name">Log Out</span>
@@ -121,92 +123,38 @@
             </div>
         </main>
     </section>
-    <div class="avatar_container">
-        <div class="avatar avatar_lg avatar_rd">
-            <img src='../../assets/avatar.jpeg' alt="Avatar-lg" />
+    <!-- Alert with background color -->
+    <div class="alert_container flex_column">
+        <div class="alert alert_info">
+            <p>Info - This is Info Alert !!</p>
         </div>
-        <div class="avatar avatar_md avatar_rd">
-            <img src='../../assets/avatar.jpeg' alt="Avatar-md" />
+        <div class="alert alert_primary">
+            <p>Primary - This is Primary Alert !!</p>
         </div>
-        <div class="avatar avatar_sm avatar_rd">
-            <img src='../../assets/avatar.jpeg' alt="Avatar-sm" />
+        <div class="alert alert_warn">
+            <p>Warning - This is Warning Alert !!</p>
         </div>
-        <div class="avatar avatar_xs avatar_rd">
-            <img src='../../assets/avatar.jpeg' alt="Avatar-xs" />
+        <div class="alert alert_error">
+            <p>Error - This is Error Alert !!</p>
         </div>
-    </div>
-    <br />
-    <div class="avatar_container">
-        <div class="avatar avatar_lg avatar_text">
-            <span>AB</span>
-        </div>
-        <div class="avatar avatar_md avatar_text">
-            <span>AB</span>
-        </div>
-        <div class="avatar avatar_sm avatar_text">
-            <span>AB</span>
-        </div>
-        <div class="avatar avatar_xs avatar_text">
-            <span>AB</span>
+        <div class="alert alert_success">
+            <p>Success - This is Success Alert !!</p>
         </div>
     </div>
     <br />
-    <div class="avatar_container">
-        <div class="avatar avatar_lg avatar_sq">
-            <img src='../../assets/avatar.jpeg' alt="Avatar-squared-lg" />
+    <!-- Alert with outlined border -->
+    <div class="alert_container flex_column">
+        <div class="alert alert_primary_outlined">
+            <p>Primary - This is Primary Alert !!</p>
         </div>
-        <div class="avatar avatar_md avatar_sq">
-            <img src='../../assets/avatar.jpeg' alt="Avatar-squared-md" />
+        <div class="alert alert_warn_outlined">
+            <p>Warning - This is Warning Alert !!</p>
         </div>
-        <div class="avatar avatar_sm avatar_sq">
-            <img src='../../assets/avatar.jpeg' alt='Avatar-squared-sm' />
+        <div class="alert alert_error_outlined">
+            <p>Error - This is Error Alert !!</p>
         </div>
-        <div class="avatar avatar_xs avatar_sq">
-            <img src='../../assets/avatar.jpeg' alt='Avatar-squared-xs' />
-        </div>
-    </div>
-    <br />
-    <div class="avatar_container">
-        <div class="avatar avatar_lg avatar_rd">
-            <img src='../../assets/avatar.jpeg' alt="avatar-rounded">
-            <span class="avatar_status status_online status_lg"></span>
-        </div>
-
-        <div class="avatar avatar_md avatar_rd">
-            <img src='../../assets/avatar.jpeg' alt="avatar-rounded">
-            <span class="avatar_status status_offline status_md"></span>
-        </div>
-
-        <div class="avatar avatar_sm avatar_rd">
-            <img src='../../assets/avatar.jpeg' alt="avatar-rounded">
-            <span class="avatar_status status_busy status_sm"></span>
-        </div>
-
-        <div class="avatar avatar_xs avatar_rd">
-            <img src='../../assets/avatar.jpeg' alt="avatar-rounded">
-            <span class="avatar_status status_online status_xs"></span>
-        </div>
-    </div>
-    <br />
-    <div class="avatar_container">
-        <div class="avatar avatar_lg avatar_text">
-            <span>AB</span>
-            <span class="avatar_status status_online status_lg"></span>
-        </div>
-
-        <div class="avatar avatar_md avatar_text">
-            <span>AB</span>
-            <span class="avatar_status status_offline status_md"></span>
-        </div>
-
-        <div class="avatar avatar_sm avatar_text">
-            <span>AB</span>
-            <span class="avatar_status status_busy status_sm"></span>
-        </div>
-
-        <div class="avatar avatar_xs avatar_text">
-            <span>AB</span>
-            <span class="avatar_status status_online status_xs"></span>
+        <div class="alert alert_success_outlined">
+            <p>Success - This is Success Alert !</p>
         </div>
     </div>
 </body>
