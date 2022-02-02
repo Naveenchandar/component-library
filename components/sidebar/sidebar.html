@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Naveen Chandar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== BOX ICONS ===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/variables.css">
+    <link rel="stylesheet" href="./sidebar.css">
+
+    <title>Sparrow : Avatare</title>
+</head>
+
+<body id="sidebar">
+    <header class="sb_header" id="header">
+        <div class="sb_header_toggle">
+            <i class='bx bx-menu' id="header-toggle"></i>
+        </div>
+
+        <div class="sb_header_img">
+            <img src="assets/img/perfil.jpg" alt="">
+        </div>
+    </header>
+    <main class="sb_main">
+        <div class="sb_list show" id="nav-bar">
+            <nav class="sb_nav">
+                <div>
+                    <a href="../../index.html" class="sb_nav_logo">
+                        <i class='bx bx-layer sb_nav_logo_icon'></i>
+                        <span class="sb_nav_logo_name">Naveen UI</span>
+                    </a>
+
+                    <div class="sb_nav_list">
+                        <div>
+                            <h3 class="sb_list_topic">Getting Started</h3>
+                            <ul class="sb_nav_list_group">
+                                <li>
+                                    <a href="#" class="sb_nav_link active">
+                                        <i class='bx bx-grid-alt sb_nav_icon'></i>
+                                        <span class="nav_name">Installation</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sb_nav_link active">
+                                        <i class='bx bx-grid-alt sb_nav_icon'></i>
+                                        <span class="nav_name">What's New</span>
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="sb_list_topic">Components</h3>
+                            <ul class="sb_nav_list_group">
+                                <li>
+                                    <a href="../alert/alert.html#alert" class="sb_nav_link active">
+                                        <i class='bx bx-grid-alt sb_nav_icon'></i>
+                                        <span class="nav_name">Alert</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../avatar/avatar.html#avatar" class="sb_nav_link">
+                                        <i class='bx bx-user sb_nav_icon'></i>
+                                        <span class="nav_name">Avatar</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../badge/badge.html#badge" class="sb_nav_link">
+                                        <i class='bx bx-message-square-detail sb_nav_icon'></i>
+                                        <span class="nav_name">Badge</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../button/button.html#button" class="sb_nav_link">
+                                        <i class='bx bx-bookmark sb_nav_icon'></i>
+                                        <span class="nav_name">Button</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sb_nav_link">
+                                        <i class='bx bx-folder sb_nav_icon'></i>
+                                        <span class="nav_name">Card</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sb_nav_link">
+                                        <i class='bx bx-bar-chart-alt-2 sb_nav_icon'></i>
+                                        <span class="nav_name">Image</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sb_nav_link">
+                                        <i class='bx bx-bar-chart-alt-2 sb_nav_icon'></i>
+                                        <span class="nav_name">Input</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sb_nav_link">
+                                        <i class='bx bx-bar-chart-alt-2 sb_nav_icon'></i>
+                                        <span class="nav_name">List</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <a href="#" class="sb_nav_link">
+                    <i class='bx bx-log-out sb_nav_icon'></i>
+                    <span class="nav_name">Log Out</span>
+                </a>
+            </nav>
+        </div>
+        <div class="sb_content">
+            <h1>Components</h1>
+        </div>
+    </main>
+</body>
+<script>
+    /*===== SHOW NAVBAR  =====*/
+    const toggle = document.getElementById('header-toggle'),
+        nav = document.getElementById('nav-bar'),
+        bodypd = document.getElementById('sidebar'),
+        headerpd = document.getElementById('header'),
+        toggleParent = document.getElementsByClassName('sb_header_toggle');
+
+    const showNavbar = () => {
+        if (toggle && nav && bodypd && headerpd) {
+            const closeIcon = toggle.classList.contains('bx-x');
+            if (closeIcon) {
+                toggle.classList.remove('bx-x');
+                toggle.classList.add('bx-menu');
+                nav.style.display = 'none';
+                toggleParent[0].style.position = 'initial';
+                toggleParent[0].style.left = '0';
+            } else {
+                toggle.classList.add('bx-x')
+                toggle.classList.remove('bx-menu');
+                nav.style.display = 'block';
+                toggleParent[0].style.position = 'absolute';
+                toggleParent[0].style.left = '25%';
+            }
+            bodypd.classList.toggle('sidebar');
+            headerpd.classList.toggle('sidebar');
+        }
+    }
+    toggle.addEventListener('click', showNavbar);
+
+    // /*===== LINK ACTIVE  =====*/
+    // const linkColor = document.querySelectorAll('.nav__link')
+
+    // function colorLink() {
+    //     if (linkColor) {
+    //         linkColor.forEach(l => l.classList.remove('active'))
+    //         this.classList.add('active')
+    //     }
+    // }
+    // linkColor.forEach(l => l.addEventListener('click', colorLink))
+</script>
+
+</html>

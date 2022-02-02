@@ -1,0 +1,97 @@
+.btn {
+    margin: 0.5rem;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 1em;
+    outline: none;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    background-color: var(--white);
+}
+
+.btn_danger {
+    background-color: var(--red);
+}
+
+.btn_diabled {
+    background-color: lightgray;
+    cursor: not-allowed;
+}
+
+.btn_outlined {
+    border: 1px solid var(--primary-color);
+}
+
+.btn_primary {
+    background-color: var(--primary-color);
+}
+
+.btn_icon_primary > .btn_icon{
+    margin: 0 0.5em 0 0;
+    font-size: 1.5em;
+}
+
+.btn_primary_outlined {
+    border:1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn_danger_outlined {
+    border: 1px solid var(--red);
+    color: var(--red);
+}
+
+.float_btn_container {
+    position: relative;
+    top: 200px;
+    left: 80px;
+    z-index: 5;
+}
+
+.float_icon > i{
+    background-color: var(--primary-color);
+    border-radius: 100%;
+    padding: 0.75rem;
+}
+
+.float_options {
+    list-style: none;
+    user-select: none;
+    position: absolute;
+    padding: 0;
+    top: -12rem;
+    opacity: 0;
+}
+
+.float_options li {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    padding-left: 0;
+}
+
+.float_options li:hover,
+.float_options_holder:hover
+{
+    opacity: 0.8;
+}
+
+.float_btn_container .float_options:hover,
+.float_options_holder:hover + .float_options
+{
+    opacity: 1;
+}
+
+.float_options_holder,
+.float_options li:hover
+{
+    cursor: pointer;
+}
+
+.btn_danger,
+.btn_primary, 
+.float_icon > i
+{
+    color: var(--white);
+}
