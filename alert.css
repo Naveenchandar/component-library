@@ -1,0 +1,83 @@
+:root {
+    --primary-color: #006D77;
+    --red: #f13737;
+    --orange: #f7b843;
+    --green: #008000;
+    --white: #fff;
+    --black:#000;
+}
+
+body {
+    font-family: Roboto,sans-serif;
+}
+
+.alert_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.alert {
+    border-radius: 0.3rem;
+    padding: 0.5em;
+    font-size: 1rem;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.alert p {
+    margin: 0.5rem;
+}
+
+.alert_info {
+    border: 1px solid;
+}
+
+/* Alert with background color */
+
+.alert_primary, 
+.alert_warn,
+.alert_error,
+.alert_success {
+    color: var(--white);
+}
+
+.alert_primary {
+    background-color: var(--primary-color);
+}
+
+.alert_warn {
+    background-color: var(--orange);
+}
+
+.alert_error {
+    background-color: var(--red);
+}
+
+.alert_success {
+    background-color: var(--green);
+}
+
+/* Alert with outlined border */
+
+.alert_primary_outlined {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.alert_warn_outlined {
+    border: 1px solid var(--orange);
+    color: var(--warning);
+}
+
+.alert_error_outlined {
+    border: 1px solid var(--red);
+    color: var(--error);
+}
+
+.alert_success_outlined {
+    border: 1px solid var(--green);
+    color: var(--success);
+}
