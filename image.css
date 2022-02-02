@@ -1,0 +1,29 @@
+.img_group {
+    background-color: #F5F7F9;
+    min-height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.img {
+    height: 9rem;
+    width: 9rem;
+    object-fit: cover;
+    margin: 1rem;
+}
+
+.img_rounded {
+    border-radius: 50%;
+}
+
+.img_responsive {
+    width: 100%;
+    height: auto;
+}
+
+.image_group, .img_squared {
+    border-radius: 4px;
+}
