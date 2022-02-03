@@ -7,7 +7,6 @@
   --link-color: #506690;
   --btn-hover-color: #2b50c7;
   --lg-heading: #161c2d;
-  --text-content: #869ab8;
   --primary-color-light: #AFA5D9;
   --sidebar-active-text: #F7F6FB;
   --white: #fff;
@@ -16,6 +15,7 @@
   --green: #008000;
   --orange: #f7b843;
   --img-bg: #F5F7F9;
+  --text-gray: #6c757d;
   /* Length */
   --fixed-header-height: 4.5rem;
   --font-size: 1rem;
