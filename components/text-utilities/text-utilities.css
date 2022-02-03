@@ -62,3 +62,27 @@ p {
 .text_gray {
     color: var(--text-gray);
 }
+
+.text_overline {
+    text-decoration: overline;
+}
+
+.text_linethrough {
+    text-decoration: line-through;
+}
+
+.text_underline {
+    text-decoration: underline;
+}
+
+.text_uppercase {
+    text-transform: uppercase;
+}
+
+.text_lowercase {
+    text-transform: lowercase;
+}
+
+.text_capitalize {
+    text-transform: capitalize;
+}
