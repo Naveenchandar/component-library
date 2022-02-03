@@ -64,3 +64,11 @@
 .text_center {
     text-align: center;
 }
+
+.flex_drow {
+    flex-direction: row;
+}
+
+.flex_dcolumn {
+    flex-direction: column;
+}

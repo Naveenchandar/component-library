@@ -16,6 +16,8 @@
   --green: #008000;
   --orange: #f7b843;
   --img-bg: #F5F7F9;
+  --list-hover-bg: #f8f9fa;
+  --list-hover-color: #495057;
   /* Length */
   --fixed-header-height: 4.5rem;
   --font-size: 1rem;
