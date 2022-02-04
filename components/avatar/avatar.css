@@ -28,7 +28,7 @@
 .avatar_sm {
     width: 4rem;
     height: 4rem;
-    font-size: 1rem;
+    font-size: var(--font-size);
 }
 
 .avatar_xs {
@@ -37,11 +37,11 @@
 }
 
 .avatar_sm, .avatar_xs {
-    font-size: 1rem;
+    font-size: var(--font-size);
 }
 
 .avatar_text {
-    background-color: red;
+    background-color: var(--red);
     border-radius: 50%;
 }
 
@@ -65,15 +65,15 @@
 }
 
 .status_online {
-    background-color: green;
+    background-color: var(--green);
 }
 
 .status_offline {
-    background-color: gray;
+    background-color: var(--gray);
 }
 
 .status_busy {
-    background-color: red;
+    background-color: var(--red);
 }
 
 .status_lg {
@@ -98,10 +98,4 @@
     min-width: 0.5rem;
     right: -0.2rem;
     bottom: 0.2rem;
-}
-
-.avatar_text, .avatar_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

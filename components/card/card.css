@@ -7,7 +7,6 @@
 
 .card_section {
     gap: 1rem;
-    flex-direction: column;
 }
 
 .basic_card {
@@ -177,10 +176,6 @@
 
 .product_review {
     color: var(--orange);
-}
-
-.product_details {
-    flex-direction: column;
 }
 
 .product_add_cart {

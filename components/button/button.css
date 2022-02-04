@@ -64,8 +64,6 @@
 }
 
 .float_options li {
-    display: flex;
-    align-items: center;
     padding: 0.5rem;
     gap: 0.5rem;
     padding-left: 0;

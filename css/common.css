@@ -80,3 +80,15 @@
 .text_uppercase {
     text-transform: uppercase;
 }
+
+.border_rounded {
+    border-radius: 50%;
+}
+
+.border_squared_4 {
+    border-radius: 4px;
+}
+
+.border_squared_7 {
+    border-radius: 7px;
+}
