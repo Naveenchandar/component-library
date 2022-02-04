@@ -53,6 +53,10 @@
     align-items: baseline;
 }
 
+.align_selfend {
+    align-self: flex-end;
+}
+
 .w-100 {
     width: 100%;
 }
@@ -71,4 +75,8 @@
 
 .flex_dcolumn {
     flex-direction: column;
+}
+
+.text_uppercase {
+    text-transform: uppercase;
 }

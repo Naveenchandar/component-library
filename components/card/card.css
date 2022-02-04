@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+#card {
+    background-color: var(--card-bg);
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+.card_section {
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.basic_card {
+    background-color: var(--white);
+    border: 1px transparent;
+    border-radius: 7px;
+    width: 21rem;
+}
+
+.card>div {
+    margin: 1rem;
+}
+
+.card_title {
+    margin: 1rem;
+    font-size: 1.2em;
+    margin-left: 0;
+}
+
+.card_image img,
+.basic_card_image img {
+    width: var(--width);
+    border-radius: 7px 7px 0 0;
+    object-fit: cover;
+    height: 14rem;
+}
+
+.card_image img {
+    width: var(--width);
+    height: 6.8rem;
+}
+
+.card_body {
+    padding: 0.5rem;
+    line-height: 1.3rem;
+}
+
+.card_body h3 {
+    margin: 0;
+}
+
+.card_body p {
+    color: var(--gray);
+    margin: 0.5rem 0;
+}
+
+.basic_card_text_overlap {
+    display: grid;
+}
+
+.basic_card_text_overlap .overlay_text,
+.basic_card_text_overlap .basic_card_image {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.basic_card_text_overlap .overlay_text {
+    color: var(--white);
+    padding: 0.5rem;
+}
+
+.overlay_subtitle {
+    padding: 0.5rem 0;
+}
+
+.basic_card_with_header img {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+.card_header {
+    padding: 0.75rem;
+}
+
+.card_header_title {
+    margin: 0;
+}
+
+.card_header_subtitle {
+    margin: 0.5rem 0 0;
+    color: #00000099;
+}
+
+.basic_card_with_btns>.card_content {
+    padding-bottom: 0;
+}
+
+.card_footer ul {
+    list-style: none;
+    gap: 20px;
+    font-size: 0.9rem;
+    padding: 0;
+    flex-grow: 1;
+    margin: 0.5rem 0;
+}
+
+.card_footer .card_more_option {
+    transform: rotate(90deg);
+}
+
+.card_footer ul li {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.basic_card_with_btns>.card_footer,
+.basic_card_with_icons>.card_footer {
+    padding: 0.5rem 1rem;
+}
+
+.card_footer ul li:nth-child(3) {
+    font-size: 1.125rem;
+}
+
+.card_footer ul li:nth-child(4) {
+    width: 1rem;
+    height: 1rem;
+}
+
+.card_footer ul li:nth-child(5) {
+    font-size: 1.25rem;
+}
+
+.card_container_badge {
+    position: relative;
+}
+
+.card_badge {
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+    background: var(--red);
+    padding: 0.5rem;
+    border-radius: 100%;
+    font-size: 75%;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.ecommerce_card {
+    align-items: inherit;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 17rem;
+    padding: 1rem;
+    border-radius: 0.9rem;
+    height: max-content;
+}
+
+.ecommerce_card .product_image {
+    background: url('https://images.unsplash.com/photo-1632200004922-bc18602c79fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80') center/cover;
+    height: 230px;
+    width: var(--width);
+    position: relative;
+}
+
+.product_wishlist {
+    position: absolute;
+    right: 0.5rem;
+    background: var(--white);
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.ecommerce_card h5 {
+    margin: 0.5rem 0;
+}
+
+.product_review {
+    color: var(--orange);
+}
+
+.product_details {
+    flex-direction: column;
+}
+
+.product_add_cart {
+    background-color: rgba(0, 0, 0, 0.94);
+    color: var(--white);
+    border: none;
+    padding: 0.6em;
+    border-radius: 15px;
+}
+
+.product_footer {
+    flex-wrap: wrap;
+}
+
+.product_offer {
+    color: var(--red);
+}
+
+.product_price {
+    font-size: 0.8rem;
+}
+
+.product_original_price {
+    text-decoration: line-through;
+    color: var(--gray);
+}
+
+.product_info,
+.product_brand {
+    margin: 0.5rem 0;
+}
+
+.product_brand {
+    margin: 0.2em 0;
+}
+
+.product_brand {
+    font-size: 1.3rem;
+}
+
+.star_empty {
+    color: var(--light-black);
+}
