@@ -52,7 +52,7 @@
 .avatar_status {
     position: absolute;
     display: inline-block;
-    border: white solid 2px;
+    border: 2px solid var(--white);
     border-radius: 50%;
     font-weight: 700;
     font-size: 70%;
