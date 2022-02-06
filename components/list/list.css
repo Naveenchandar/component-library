@@ -1,0 +1,69 @@
+.list_group {
+    width: 15rem;
+}
+
+.list_section {
+    gap: 2rem;
+}
+
+.list_group_item {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: var(--white);
+    border: 1px solid #00000020;
+}
+
+.list_group_item:first-child {
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.list_group_item:last-child {
+    border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.list_group_item.item_active {
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.list_group_item.disabled {
+    color: #6c757d;
+    background-color: var(--white);
+}
+
+.list_item_action {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.list_item_action:focus, 
+.list_item_action:hover {
+    color: var(--list-hover-color);
+    text-decoration: none;
+    background-color: var(--list-hover-bg);
+    border: 1px solid var(--primary-color);
+}
+
+.list_group .list_badge {
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+
+.list_group_badge .list_group_item:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
+    color: var(--white);
+}
+
+.list_group_badge .list_group_item:hover .list_badge {
+    background-color: var(--red);
+}
