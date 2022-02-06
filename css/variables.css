@@ -19,8 +19,11 @@
   --list-hover-bg: #f8f9fa;
   --list-hover-color: #495057;
   --gray: #808080;
+  --grey: #e5e5e5;
   --card-bg: #f5f5f5;
   --light-black: #808080;
+  --background-color: #fafafa;
+	--navigation-bg: #fafafa80;
   /* Length */
   --fixed-header-height: 4.5rem;
   --font-size: 1rem;
@@ -29,8 +32,18 @@
   --header-height: 3rem;
   --nav-width: 68px;
   /* Typography */
-  --font-family: 'Nunito Sans', sans-serif;
+  /* --font-family: 'Nunito Sans', sans-serif; */
+  --font-family: 'Inter', sans-serif;
   --normal-font-size: 1rem;
   /* Z Index */
   --z-fixed: 10;
+  
+  --value-1: 0.8rem;
+	--value-2: 1.6rem;
+	--value-3: 2.4rem;
+	--value-4: 3.2rem;
+	--value-5: 4rem;
+	--value-6: 4.8em;
+	--value-7: 5.6rem;
+	--value-8: 6.4rem;
 }
