@@ -63,7 +63,7 @@
                     <a href="../card/card.html#card" class="block w_100">Card</a>
                 </li>
                 <li class="py-1 px-2 m-1 ml-4 sidebar_item">
-                    <a href="../card/card.html#card" class="block w_100">Grid</a>
+                    <a href="../grid/grid.html#grid" class="block w_100">Grid</a>
                 </li>
                 <li class="py-1 px-2 m-1 ml-4 sidebar_item">
                     <a href="../image/image.html#image" class="block w_100">Image</a>
@@ -118,24 +118,5 @@
         </main>
     </div>
 </body>
-<script>
-    const menuIcon = document.querySelector(".menu");
-    const closeSidebar = document.querySelector(".close");
-    const sidebar = document.querySelector(".sidebar");
-
-    menuIcon.addEventListener("click", () =>
-        sidebar.classList.add("sidebar_toggle")
-    );
-
-    closeSidebar.addEventListener("click", () =>
-        sidebar.classList.remove("sidebar_toggle")
-    );
-
-    const navbar = document.querySelector(".side-navbar");
-    // const toggleNavbar = document.querySelector(".toggle-navbar");
-    const handleToggle = () => navbar.classList.toggle("side-navbar-width");
-    // toggleNavbar.addEventListener("click", handleToggle);
-
-</script>
-
+<script src="../../javascript/toggle.js"></script>
 </html>

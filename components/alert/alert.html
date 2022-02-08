@@ -138,24 +138,5 @@
         </main>
     </div>
 </body>
-<script>
-    const menuIcon = document.querySelector(".menu");
-    const closeSidebar = document.querySelector(".close");
-    const sidebar = document.querySelector(".sidebar");
-
-    menuIcon.addEventListener("click", () =>
-        sidebar.classList.add("sidebar_toggle")
-    );
-
-    closeSidebar.addEventListener("click", () =>
-        sidebar.classList.remove("sidebar_toggle")
-    );
-
-    const navbar = document.querySelector(".side-navbar");
-    // const toggleNavbar = document.querySelector(".toggle-navbar");
-    const handleToggle = () => navbar.classList.toggle("side-navbar-width");
-    // toggleNavbar.addEventListener("click", handleToggle);
-
-</script>
-
+<script src="../../javascript/toggle.js"></script>
 </html>
