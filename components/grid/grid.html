@@ -2,21 +2,16 @@
 <html lang="en">
 
 <head>
-    <!-- meta tags -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#fafafa" />
-    <meta name="author" content="Naveen Chandar" />
-    <meta name="description" content="Naveen UI a CSS component library for your awesome UI." />
-
-    <!-- links -->
-    <link rel="stylesheet" href="../../css/index.css" />
-    <link rel="stylesheet" href="./documentation.css" />
-    <title>⚒ Naveen UI | Get Started!</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Naveen Chandar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="./grid.css">
+    <title>Grid</title>
 </head>
 
-<body>
+<body id="grid">
     <div class="container grid w_screen_100 h-screen-100">
         <nav class="navbar flex_row align_center flex_wrap py-2 px-6 fixed_pos w_100">
             <a href=" ../index.html">
@@ -37,7 +32,7 @@
             </ul>
         </nav>
         <aside class="sidebar fixed_pos transition_3_ease">
-            <div class="sidebar_title flex hide flex-row justify-spacebtw py-2 px-2">
+            <div class="sidebar_title flex hide flex_row justify_spacebtw py-2 px-2">
                 <a class="ml-4 invert text-lg font_bold" href="../index.html">Naveen UI</a>
                 <button class="ml-auto close hide transition_3_ease">
                     <i class="fa fa-times"></i>
@@ -63,7 +58,7 @@
                     <a href="../card/card.html#card" class="block w_100">Card</a>
                 </li>
                 <li class="py-1 px-2 m-1 ml-4 sidebar_item">
-                    <a href="../grid/grid.html#grid" class="block w_100">Grid</a>
+                    <a href="../card/card.html#card" class="block w_100">Grid</a>
                 </li>
                 <li class="py-1 px-2 m-1 ml-4 sidebar_item">
                     <a href="../image/image.html#image" class="block w_100">Image</a>
@@ -85,38 +80,39 @@
                 </li>
             </ul>
         </aside>
-        <main class="main_container flex flex_column p-1">
-            <section id="installation" class="installation">
-                <article class="mt-5">
-                    <p class="text_lg font_bold">Installation</p>
-                    <p>
-                        Import the below link in your head section of html file or in CSS
-                        file.
-                    </p>
-
-                    <div class="my-2 code_snippet w_100 h_100">
-                        <!-- <iframe
-                            src=""
-                            style="height: 95px; border:0; transform: scale(1); overflow:hidden;"
-                            sandbox="allow-scripts allow-same-origin" class="w_100 h_100">
-                        </iframe> -->
+        <main class="main_container p-1">
+            <section>
+                <div class="grid_container">
+                    <div class="grid_group grid_two_column">
+                        <div class="flex_row grid grid_one">Grid one</div>
+                        <div class="flex_row grid grid_two">Grid two</div>
                     </div>
-                </article>
-                <article class="mt-5">
-                    <p class="text_lg font_bold">References</p>
-                    <ol class="ml-2">
-                        <li>Icons from font-awesome</li>
-                        <li>Images from google images and picsum.com</li>
-                    </ol>
-                    <p class="mt-4">Made by Naveen Chandar.</p>
-                </article>
+                    <div>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28230%2C230%2C230%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=19px&ph=22px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid_group%2520grid_two_column%2522%253E%2509%2509%2509%2520%2520%2520%250A%2509%253Cdiv%2520class%253D%2522flex_row%2520grid%2520grid_one%2522%253EGrid%2520one%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522flex_row%2520grid%2520grid_two%2522%253EGrid%2520two%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                            style="width: 546px; height: 208px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+                <br />
+                <div class="grid_container">
+                    <div class="grid_group grid_three_column">
+                        <div class="flex_row grid grid_one">Grid one</div>
+                        <div class="flex_row grid grid_two">Grid two</div>
+                        <div class="flex_row grid_three">Grid three</div>
+                    </div>
+                </div>
+                <div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28230%2C230%2C230%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=19px&ph=22px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid_group%2520grid_three_column%2522%253E%2509%2509%2509%2520%2520%2520%250A%2509%253Cdiv%2520class%253D%2522flex_row%2520grid%2520grid_one%2522%253EGrid%2520one%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522flex_row%2520grid%2520grid_two%2522%253EGrid%2520two%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522flex_row%2520grid_three%2522%253EGrid%2520three%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        style="width: 546px; height: 205px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
             </section>
-
-            <footer class="mt-6 p-2 text_center">
-                <p>Made by Naveen Chandar 💛 🚀.</p>
-            </footer>
         </main>
     </div>
 </body>
-<script src="../../javascript/toggle.js"></script>
+
 </html>
