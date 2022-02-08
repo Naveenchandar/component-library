@@ -1,5 +1,5 @@
 .list_group {
-    width: 15rem;
+    width: 30rem;
 }
 
 .list_section {
@@ -12,6 +12,7 @@
     margin-bottom: -1px;
     background-color: var(--white);
     border: 1px solid #00000020;
+    font-size: 1.3rem;
 }
 
 .list_group_item:first-child {
@@ -53,7 +54,7 @@
     vertical-align: baseline;
     border-radius: 0.25rem;
     padding: 0.5rem;
-    font-size: 0.7rem;
+    font-size: 1rem;
     color: var(--white);
     background-color: var(--primary-color);
 }
