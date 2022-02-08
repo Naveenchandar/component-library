@@ -6,14 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Naveen Chandar">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../../css/index.css">
-    <link rel="stylesheet" href="./badge.css">
-    <title>Badge</title>
+    <link rel="stylesheet" href="./grid.css">
+    <title>Grid</title>
 </head>
 
-<body id='badge'>
+<body id="grid">
     <div class="container grid w_screen_100 h-screen-100">
         <nav class="navbar flex_row align_center flex_wrap py-2 px-6 fixed_pos w_100">
             <a href=" ../index.html">
@@ -83,33 +81,36 @@
             </ul>
         </aside>
         <main class="main_container p-1">
-            <div class="badge_container flex_column">
-                <p>
-                    Text with a badge text
-                    <span class="badge badge_text">Text</span>
-                </p>
-            </div>
-            <div class="badge_container flex_column">
-                <p> Button with badge on right</p>
-                <button class="flex align_center">
-                    Action
-                    <span class="badge badge_number"><span>8</span></span>
-                </button>
-            </div>
-            <div class="badge_container flex_column">
-                <p>Button with badge on left</p>
-                <button class="flex align_center">
-                    Hide
-                    <span class="badge badge_number badge_left"><span>7450</span></span>
-                </button>
-            </div>
-            <div class="badge_container flex_column">
-                <p> Icon with a badge</p>
-                <p>
-                    <i class="fa fa-shopping-cart fa-2x"></i>
-                    <span class="badge badge_number"><span>25</span></span>
-                </p>
-            </div>
+            <section>
+                <div class="grid_container">
+                    <div class="grid_group grid_two_column">
+                        <div class="flex_row grid grid_one">Grid one</div>
+                        <div class="flex_row grid grid_two">Grid two</div>
+                    </div>
+                    <div>
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28230%2C230%2C230%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=19px&ph=22px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid_group%2520grid_two_column%2522%253E%2509%2509%2509%2520%2520%2520%250A%2509%253Cdiv%2520class%253D%2522flex_row%2520grid%2520grid_one%2522%253EGrid%2520one%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522flex_row%2520grid%2520grid_two%2522%253EGrid%2520two%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                            style="width: 546px; height: 208px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+                <br />
+                <div class="grid_container">
+                    <div class="grid_group grid_three_column">
+                        <div class="flex_row grid grid_one">Grid one</div>
+                        <div class="flex_row grid grid_two">Grid two</div>
+                        <div class="flex_row grid_three">Grid three</div>
+                    </div>
+                </div>
+                <div>
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28230%2C230%2C230%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=19px&ph=22px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid_group%2520grid_three_column%2522%253E%2509%2509%2509%2520%2520%2520%250A%2509%253Cdiv%2520class%253D%2522flex_row%2520grid%2520grid_one%2522%253EGrid%2520one%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522flex_row%2520grid%2520grid_two%2522%253EGrid%2520two%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522flex_row%2520grid_three%2522%253EGrid%2520three%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        style="width: 546px; height: 205px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </section>
         </main>
     </div>
 </body>

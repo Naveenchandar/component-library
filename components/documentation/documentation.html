@@ -2,18 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="Naveen Chandar">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../../css/index.css">
-    <link rel="stylesheet" href="./badge.css">
-    <title>Badge</title>
+    <!-- meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fafafa" />
+    <meta name="author" content="Naveen Chandar" />
+    <meta name="description" content="Naveen UI a CSS component library for your awesome UI." />
+
+    <!-- links -->
+    <link rel="stylesheet" href="../../css/index.css" />
+    <link rel="stylesheet" href="./documentation.css" />
+    <title>⚒ Naveen UI | Get Started!</title>
 </head>
 
-<body id='badge'>
+<body>
     <div class="container grid w_screen_100 h-screen-100">
         <nav class="navbar flex_row align_center flex_wrap py-2 px-6 fixed_pos w_100">
             <a href=" ../index.html">
@@ -34,7 +37,7 @@
             </ul>
         </nav>
         <aside class="sidebar fixed_pos transition_3_ease">
-            <div class="sidebar_title flex hide flex_row justify_spacebtw py-2 px-2">
+            <div class="sidebar_title flex hide flex-row justify-spacebtw py-2 px-2">
                 <a class="ml-4 invert text-lg font_bold" href="../index.html">Naveen UI</a>
                 <button class="ml-auto close hide transition_3_ease">
                     <i class="fa fa-times"></i>
@@ -60,7 +63,7 @@
                     <a href="../card/card.html#card" class="block w_100">Card</a>
                 </li>
                 <li class="py-1 px-2 m-1 ml-4 sidebar_item">
-                    <a href="../card/card.html#card" class="block w_100">Grid</a>
+                    <a href="../grid/grid.html#grid" class="block w_100">Grid</a>
                 </li>
                 <li class="py-1 px-2 m-1 ml-4 sidebar_item">
                     <a href="../image/image.html#image" class="block w_100">Image</a>
@@ -82,36 +85,38 @@
                 </li>
             </ul>
         </aside>
-        <main class="main_container p-1">
-            <div class="badge_container flex_column">
-                <p>
-                    Text with a badge text
-                    <span class="badge badge_text">Text</span>
-                </p>
-            </div>
-            <div class="badge_container flex_column">
-                <p> Button with badge on right</p>
-                <button class="flex align_center">
-                    Action
-                    <span class="badge badge_number"><span>8</span></span>
-                </button>
-            </div>
-            <div class="badge_container flex_column">
-                <p>Button with badge on left</p>
-                <button class="flex align_center">
-                    Hide
-                    <span class="badge badge_number badge_left"><span>7450</span></span>
-                </button>
-            </div>
-            <div class="badge_container flex_column">
-                <p> Icon with a badge</p>
-                <p>
-                    <i class="fa fa-shopping-cart fa-2x"></i>
-                    <span class="badge badge_number"><span>25</span></span>
-                </p>
-            </div>
+        <main class="main_container flex flex_column p-1">
+            <section id="installation" class="installation">
+                <article class="mt-5">
+                    <p class="text_lg font_bold">Installation</p>
+                    <p>
+                        Import the below link in your head section of html file or in CSS
+                        file.
+                    </p>
+
+                    <div class="my-2 code_snippet w_100 h_100">
+                        <!-- <iframe
+                            src=""
+                            style="height: 95px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin" class="w_100 h_100">
+                        </iframe> -->
+                    </div>
+                </article>
+                <article class="mt-5">
+                    <p class="text_lg font_bold">References</p>
+                    <ol class="ml-2">
+                        <li>Icons from font-awesome</li>
+                        <li>Images from google images and picsum.com</li>
+                    </ol>
+                    <p class="mt-4">Made by Naveen Chandar.</p>
+                </article>
+            </section>
+
+            <footer class="mt-6 p-2 text_center">
+                <p>Made by Naveen Chandar 💛 🚀.</p>
+            </footer>
         </main>
     </div>
 </body>
-
+<script src="../../javascript/toggle.js"></script>
 </html>
