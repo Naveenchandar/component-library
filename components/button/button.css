@@ -42,7 +42,7 @@
 }
 
 .float_btn_container {
-    position: absolute;
+    /* position: absolute; */
     /* top: 200px;
     left: 80px; */
     z-index: 5;
@@ -92,4 +92,9 @@
 .float_icon > i
 {
     color: var(--white);
+}
+
+.btn_link:hover {
+    color: var(--primary-color);
+    background-color: #4723d92e;
 }

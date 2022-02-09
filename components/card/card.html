@@ -82,9 +82,18 @@
             </ul>
         </aside>
         <main class="main_container p-1">
+            <h2 class="component_title">Card</h2>
+            <p class="component_subtitle">
+                Cards are surfaces that display content and actions on a single topic.
+                They should be easy to scan for relevant and actionable information. Elements, like text and images,
+                should be placed on them in a way that clearly indicates hierarchy.
+            </p>
             <section class="flex_row card_section flex_dcolumn">
                 <div>
-                    <h4 class="card_title">Basic Card</h4>
+                    <h4 class="content_title">Basic Card</h4>
+                    <p class="content_subtitle">
+                        Basic Card is the one that contains an Image, Title, Subtitle,Text & perform actions.
+                    </p>
                     <div class="card_container">
                         <div class="basic_card">
                             <div class='basic_card_image'>
@@ -100,7 +109,7 @@
                                 <ul class="flex align_center justify_even">
                                     <li class="text_uppercase">Read</li>
                                     <li class="text_uppercase">Bookmark</li>
-                                    <li><i class="fa fa-heart-o"></i></li>
+                                    <!-- <li><i class="fa fa-heart-o"></i></li> -->
                                     <li>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
@@ -123,7 +132,10 @@
                 </div>
                 <br />
                 <div>
-                    <h4 class="card_title">Card With Text Over Media</h4>
+                    <h4 class="content_title">Card With Text Over Media</h4>
+                    <p class="content_subtitle">
+                        Text and subtitle will be placed as an overlay.
+                    </p>
                     <div class="card_container">
                         <div class="basic_card basic_card_text_overlap">
                             <div class='basic_card_image'>
@@ -141,7 +153,7 @@
                                 <ul class="flex justify_even align_center">
                                     <li class="text_uppercase">Read</li>
                                     <li class="text_uppercase">Bookmark</li>
-                                    <li><i class="fa fa-heart-o"></i></li>
+                                    <!-- <li><i class="fa fa-heart-o"></i></li> -->
                                     <li>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
@@ -164,7 +176,10 @@
                 </div>
                 <br />
                 <div>
-                    <h4 class="card_title">Card With Header</h4>
+                    <h4 class="content_title">Card With Header</h4>
+                    <p class="content_subtitle">
+                        Header will be placed with the card which displays the title and subtitle information.
+                    </p>
                     <div class="card_container">
                         <div class="basic_card basic_card_with_header">
                             <div class='card_header'>
@@ -182,7 +197,7 @@
                                 <ul class="flex justify_even align_center">
                                     <li class="text_uppercase">Read</li>
                                     <li class="text_uppercase">Bookmark</li>
-                                    <li><i class="fa fa-heart-o"></i></li>
+                                    <!-- <li><i class="fa fa-heart-o"></i></li> -->
                                     <li>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
@@ -205,7 +220,10 @@
                 </div>
                 <br />
                 <div>
-                    <h4 class="card_title">Card With Buttons</h4>
+                    <h4 class="content_title">Card With Buttons</h4>
+                    <p class="content_subtitle">
+                        Cards will have only buttons to perform actions on the card.
+                    </p>
                     <div class="card_container">
                         <div class="basic_card basic_card_with_btns">
                             <div class='basic_card_image'>
@@ -235,7 +253,10 @@
                 </div>
                 <br />
                 <div>
-                    <h4 class="card_title">Card With Icons</h4>
+                    <h4 class="content_title">Card With Icons</h4>
+                    <p class="content_subtitle">
+                        Cards will have only icons to perform actions on the card.
+                    </p>
                     <div class="card_container">
                         <div class="basic_card basic_card_with_icons">
                             <div class='basic_card_image'>
@@ -271,8 +292,11 @@
                     </div>
                 </div>
                 <br />
-                <div>
-                    <h4 class="card_title">Profile Card</h4>
+                <!-- <div>
+                    <h4 class="component_title">Profile Card</h4>
+                    <p class="content_subtitle">
+                        Profile Cards will have only buttons to perform actions on the card.
+                    </p>
                     <div class="card_container">
                         <div class='basic_card'>
                             <div class="card_container_horizontal flex align_start">
@@ -309,13 +333,14 @@
                             </iframe>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <br />
                 <div>
-                    <h4 class="card_title">Profile Card With Badge </h4>
+                    <h4 class="content_title">Profile Card With Badge </h4>
+                    <p class="content_subtitle">Card with Badge will be displayed on top right to notify about the new arrival.</p>
                     <div class="card_container_badge">
                         <div class='basic_card'>
-                            <div class="card_container_horizontal">
+                            <div class="card_container_horizontal relative_pos">
                                 <div class="card_image">
                                     <img src='https://images.unsplash.com/photo-1536323760109-ca8c07450053'
                                         alt='Profile card with badge' loading='lazy' />
@@ -324,12 +349,13 @@
                                     <h3>Our Changing Planet</h3>
                                     <p>by Kurt Wagner</p>
                                 </div>
+                                <span class="card_badge">New</span>
                             </div>
                             <div class="card_footer flex">
                                 <ul class="flex justify_even align_center">
                                     <li class="text_uppercase">Read</li>
                                     <li class="text_uppercase">Bookmark</li>
-                                    <li><i class="fa fa-heart-o"></i></li>
+                                    <!-- <li><i class="fa fa-heart-o"></i></li> -->
                                     <li>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
@@ -341,7 +367,6 @@
                                 </ul>
                             </div>
                         </div>
-                        <span class="card_badge">New</span>
                     </div>
                     <div class="code_snippet relative_pos">
                         <iframe
@@ -353,7 +378,10 @@
                 </div>
                 <br />
                 <div>
-                    <h4 class="card_title">E-Commerce Card </h4>
+                    <h4 class="content_title">E-Commerce Card </h4>
+                    <p class="content_subitle">
+                        eCommerce Card is used to display the products details i.e., Product, Name, Type, Fixed badge, Price, Discount and stock.
+                    </p>
                     <div class="ecommerce_card flex_column">
                         <div class="product_image">
                             <i class='fa fa-heart-o product_wishlist'></i>

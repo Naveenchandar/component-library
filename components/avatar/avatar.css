@@ -99,3 +99,7 @@
     right: -0.2rem;
     bottom: 0.2rem;
 }
+
+.avatar span {
+    font-size: inherit;
+}

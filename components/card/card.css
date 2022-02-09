@@ -40,12 +40,14 @@
 }
 
 .card_body {
-    padding: 0.5rem;
+    padding: 1rem;
     line-height: 1.3rem;
 }
 
-.card_body h3 {
+.card_body h3, .overlay_title {
     margin: 0;
+    font-size: 2rem;
+    line-height: normal;
 }
 
 .card_body p {
@@ -83,6 +85,7 @@
 
 .card_header_title {
     margin: 0;
+    font-size: 1.5rem;
 }
 
 .card_header_subtitle {
@@ -97,10 +100,10 @@
 .card_footer ul {
     list-style: none;
     gap: 20px;
-    font-size: 0.9rem;
-    padding: 0;
+    font-size: 1.1rem;
+    padding: 0 0.5rem;
     flex-grow: 1;
-    margin: 0.5rem 0;
+    margin: 0.8rem 0;
 }
 
 .card_footer .card_more_option {
@@ -117,18 +120,18 @@
     padding: 0.5rem 1rem;
 }
 
-.card_footer ul li:nth-child(3) {
+/* .card_footer ul li:nth-child(3) {
     font-size: 1.125rem;
-}
+} */
 
-.card_footer ul li:nth-child(4) {
+/* .card_footer ul li:nth-child(4) {
     width: 1rem;
     height: 1rem;
-}
+} */
 
-.card_footer ul li:nth-child(5) {
+/* .card_footer ul li:nth-child(5) {
     font-size: 1.25rem;
-}
+} */
 
 .card_container_badge {
     position: relative;
@@ -149,7 +152,7 @@
 .ecommerce_card {
     align-items: inherit;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    width: 17rem;
+    width: 30rem;
     padding: 1rem;
     border-radius: 0.9rem;
     height: max-content;
@@ -218,4 +221,12 @@
 
 .star_empty {
     color: var(--gray);
+}
+
+.card_container_horizontal .card_body h3 {
+    font-size: 1.5rem;
+}
+
+.card_container_horizontal .card_body p {
+    font-size: 1.3rem;
 }
