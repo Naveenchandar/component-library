@@ -1,0 +1,7 @@
+.ratings {
+    gap: 20px;
+}
+
+.star_checked {
+    color: var(--orange);
+}
