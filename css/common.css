@@ -321,3 +321,7 @@
 .top_0 {
 	top: 0;
 }
+
+.primary_text_color {
+	color: var(--primary-color);
+}
