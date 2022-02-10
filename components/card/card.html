@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Naveen Chandar">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="./card.css">
+    <title>Card</title>
+</head>
+
+<body id="card">
+    <div class="container grid w_screen_100 h-screen-100">
+        <nav class="navbar flex_row align_center flex_wrap py-2 px-6 fixed_pos w_100">
+            <a href=" ../index.html">
+                <h3 class="brand_name">Retro UI</h3>
+            </a>
+            <button class="menu hide"><i class="fa fa-bars"></i></button>
+            <ul class="ml-auto flex_row align_center font_bold">
+                <li class="ml-4">
+                    <a href="#" target="_blank">
+                        <i class="fa fa-github social_icons"></i>
+                    </a>
+                </li>
+                <li class="ml-4">
+                    <a href="#" target="_blank">
+                        <i class="fa fa-linkedin-square social_icons"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <aside class="sidebar fixed_pos transition_3_ease">
+            <div class="sidebar_title flex hide flex_row justify_spacebtw py-2 px-2">
+                <a class="ml-4 invert text-lg font_bold" href="../index.html">Retro UI</a>
+                <button class="ml-auto close hide transition_3_ease">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+            <ul class="mt-3">
+                <li class="py-1 px-2 m-1 ml-4 sidebar_item">
+                    <a href="#installation" class="block w_100">Get started!</a>
+                </li>
+                <li class="py-1 px-2 m-1 ml-4 sidebar_item">
+                    <a href="../alert/alert.html#alert" class="block w_100">Alert</a>
+                </li>
+                <li class="py-1 px-2 m-1 ml-4 sidebar_item">
+                    <a href="../avatar/avatar.html#avatar" class="block w_100">Avatar</a>
+                </li>
+                <li class="py-1 px-2 m-1 ml-4 sidebar_item">
+                    <a href="../badge/badge.html#badge" class="block w_100">Badge</a>
+                </li>
+                <li class="py-1 px-2 m-1 ml-4 sidebar_item">
+                    <a href="../button/button.html#button" class="block w_100">Button</a>
+                </li>
+                <li class="py-1 px-2 m-1 ml-4 sidebar_item">
+                    <a href="../card/card.html#card" class="block w_100">Card</a>
+                </li>
+                <li class="py-1 px-2 m-1 ml-4 sidebar_item">
+                    <a href="../card/card.html#card" class="block w_100">Grid</a>
+                </li>
+                <li class="py-1 px-2 m-1 ml-4 sidebar_item">
+                    <a href="../image/image.html#image" class="block w_100">Image</a>
+                </li>
+                <li class="py-1 px-2 m-1 ml-4 sidebar_item">
+                    <a href="../input/input.html#input" class="block w_100">Input</a>
+                </li>
+                <li class="py-1 px-2 m-1 ml-4 sidebar_item">
+                    <a href="../list/list.html#list" class="block w_100">List</a>
+                </li>
+                <li class="py-1 px-2 m-1 ml-4 sidebar_item">
+                    <a href="../badge/badge.html" class="block w_100">Navigation</a>
+                </li>
+                <li class="py-1 px-2 m-1 ml-4 sidebar_item">
+                    <a href="../badge/badge.html" class="block w_100">Rating</a>
+                </li>
+                <li class="py-1 px-2 m-1 ml-4 sidebar_item">
+                    <a href="../badge/badge.html" class="block w_100">Text Utilities</a>
+                </li>
+            </ul>
+        </aside>
+        <main class="main_container p-1">
+            <h2 class="component_title">Card</h2>
+            <p class="component_subtitle">
+                Cards are surfaces that display content and actions on a single topic.
+                They should be easy to scan for relevant and actionable information. Elements, like text and images,
+                should be placed on them in a way that clearly indicates hierarchy.
+            </p>
+            <section class="flex_row card_section flex_dcolumn">
+                <div>
+                    <h4 class="content_title">Basic Card</h4>
+                    <p class="content_subtitle">
+                        Basic Card is the one that contains an Image, Title, Subtitle,Text & perform actions.
+                    </p>
+                    <div class="card_container">
+                        <div class="basic_card">
+                            <div class='basic_card_image'>
+                                <img src='https://images.unsplash.com/photo-1536323760109-ca8c07450053' alt='Basic card'
+                                    loading='lazy' />
+                            </div>
+                            <div class="card_body">
+                                <h3>Title</h3>
+                                <p>subtitle</p>
+                                <p>Visit ten places on our planet that are undergoing the biggest changes today.</p>
+                            </div>
+                            <div class="card_footer flex">
+                                <ul class="flex align_center justify_even">
+                                    <li class="text_uppercase">Read</li>
+                                    <li class="text_uppercase">Bookmark</li>
+                                    <!-- <li><i class="fa fa-heart-o"></i></li> -->
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                            <path
+                                                d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                                        </svg>
+                                    </li>
+                                    <li class="card_more_option">...</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="code_snippet relative_pos">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28230%2C230%2C230%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=19px&ph=22px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522basic_card%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522basic_card_image%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fimages.unsplash.com%252Fphoto-1536323760109-ca8c07450053%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522Basic%2520card%2522%250A%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card_body%2522%253E%250A%2520%2520%2520%2520%253Ch3%253ETitle%253C%252Fh3%253E%250A%2520%2520%2520%2520%253Cp%253Esubtitle%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520Visit%2520ten%2520places%2520on%2520our%2520planet%2520that%2520are%2520undergoing%2520the%2520biggest%2520changes%250A%2520%2520%2520%2520%2520%2520today.%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card_footer%2520flex%2522%253E%250A%2520%2520%2520%2520%253Cul%2520class%253D%2522flex%2520align_center%2520justify_even%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522text_uppercase%2522%253ERead%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522text_uppercase%2522%253EBookmark%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-heart-o%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csvg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520xmlns%253D%2522http%253A%252F%252Fwww.w3.org%252F2000%252Fsvg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520width%253D%252216%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520height%253D%252216%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520fill%253D%2522currentColor%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522bi%2520bi-share%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520viewBox%253D%25220%25200%252016%252016%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cpath%2520d%253D%2522M13.5%25201a1.5%25201.5%25200%25201%25200%25200%25203%25201.5%25201.5%25200%25200%25200%25200-3zM11%25202.5a2.5%25202.5%25200%25201%25201%2520.603%25201.628l-6.718%25203.12a2.499%25202.499%25200%25200%25201%25200%25201.504l6.718%25203.12a2.5%25202.5%25200%25201%25201-.488.876l-6.718-3.12a2.5%25202.5%25200%25201%25201%25200-3.256l6.718-3.12A2.5%25202.5%25200%25200%25201%252011%25202.5zm-8.5%25204a1.5%25201.5%25200%25201%25200%25200%25203%25201.5%25201.5%25200%25200%25200%25200-3zm11%25205.5a1.5%25201.5%25200%25201%25200%25200%25203%25201.5%25201.5%25200%25200%25200%25200-3z%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fsvg%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522card_more_option%2522%253E...%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                                style="width: 1024px; height: 912px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin" id="iframe">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div>
+                    <h4 class="content_title">Card With Text Over Media</h4>
+                    <p class="content_subtitle">
+                        Text and subtitle will be placed as an overlay.
+                    </p>
+                    <div class="card_container">
+                        <div class="basic_card basic_card_text_overlap">
+                            <div class='basic_card_image'>
+                                <img src='https://images.unsplash.com/photo-1536323760109-ca8c07450053'
+                                    alt='Text over card' loading='lazy' />
+                            </div>
+                            <div class="overlay_text align_selfend">
+                                <h3 class="overlay_title">Title</h3>
+                                <p class="overlay_subtitle">Subtitle</p>
+                            </div>
+                            <div class="card_body">
+                                <p>Visit ten places on our planet that are undergoing the biggest changes today.</p>
+                            </div>
+                            <div class="card_footer flex">
+                                <ul class="flex justify_even align_center">
+                                    <li class="text_uppercase">Read</li>
+                                    <li class="text_uppercase">Bookmark</li>
+                                    <!-- <li><i class="fa fa-heart-o"></i></li> -->
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                            <path
+                                                d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                                        </svg>
+                                    </li>
+                                    <li class="card_more_option">...</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="code_snippet relative_pos">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28230%2C230%2C230%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=19px&ph=22px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522basic_card%2520basic_card_text_overlap%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522basic_card_image%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fimages.unsplash.com%252Fphoto-1536323760109-ca8c07450053%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522Text%2520over%2520card%2522%250A%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522overlay_text%2520align_selfend%2522%253E%250A%2520%2520%2520%2520%253Ch3%2520class%253D%2522overlay_title%2522%253ETitle%253C%252Fh3%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522overlay_subtitle%2522%253ESubtitle%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card_body%2522%253E%250A%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520Visit%2520ten%2520places%2520on%2520our%2520planet%2520that%2520are%2520undergoing%2520the%2520biggest%2520changes%250A%2520%2520%2520%2520%2520%2520today.%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card_footer%2520flex%2522%253E%250A%2520%2520%2520%2520%253Cul%2520class%253D%2522flex%2520justify_even%2520align_center%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522text_uppercase%2522%253ERead%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522text_uppercase%2522%253EBookmark%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-heart-o%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csvg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520xmlns%253D%2522http%253A%252F%252Fwww.w3.org%252F2000%252Fsvg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520width%253D%252216%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520height%253D%252216%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520fill%253D%2522currentColor%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522bi%2520bi-share%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520viewBox%253D%25220%25200%252016%252016%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cpath%2520d%253D%2522M13.5%25201a1.5%25201.5%25200%25201%25200%25200%25203%25201.5%25201.5%25200%25200%25200%25200-3zM11%25202.5a2.5%25202.5%25200%25201%25201%2520.603%25201.628l-6.718%25203.12a2.499%25202.499%25200%25200%25201%25200%25201.504l6.718%25203.12a2.5%25202.5%25200%25201%25201-.488.876l-6.718-3.12a2.5%25202.5%25200%25201%25201%25200-3.256l6.718-3.12A2.5%25202.5%25200%25200%25201%252011%25202.5zm-8.5%25204a1.5%25201.5%25200%25201%25200%25200%25203%25201.5%25201.5%25200%25200%25200%25200-3zm11%25205.5a1.5%25201.5%25200%25201%25200%25200%25203%25201.5%25201.5%25200%25200%25200%25200-3z%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fsvg%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522card_more_option%2522%253E...%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                                style="width: 1024px; height: 949px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin" id="iframe">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div>
+                    <h4 class="content_title">Card With Header</h4>
+                    <p class="content_subtitle">
+                        Header will be placed with the card which displays the title and subtitle information.
+                    </p>
+                    <div class="card_container">
+                        <div class="basic_card basic_card_with_header">
+                            <div class='card_header'>
+                                <h3 class="card_header_title">Our Changing Planet</h3>
+                                <p class="card_header_subtitle">by Kurt Wagner</p>
+                            </div>
+                            <div>
+                                <img src='https://images.unsplash.com/photo-1536323760109-ca8c07450053'
+                                    alt='Card with header' loading='lazy' />
+                            </div>
+                            <div class="card_body">
+                                <p>Visit ten places on our planet that are undergoing the biggest changes today.</p>
+                            </div>
+                            <div class="card_footer flex">
+                                <ul class="flex justify_even align_center">
+                                    <li class="text_uppercase">Read</li>
+                                    <li class="text_uppercase">Bookmark</li>
+                                    <!-- <li><i class="fa fa-heart-o"></i></li> -->
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                            <path
+                                                d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                                        </svg>
+                                    </li>
+                                    <li class="card_more_option">...</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="code_snippet relative_pos">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28230%2C230%2C230%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=19px&ph=22px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522basic_card%2520basic_card_with_header%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card_header%2522%253E%250A%2520%2520%2520%2520%253Ch3%2520class%253D%2522card_header_title%2522%253EOur%2520Changing%2520Planet%253C%252Fh3%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522card_header_subtitle%2522%253Eby%2520Kurt%2520Wagner%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fimages.unsplash.com%252Fphoto-1536323760109-ca8c07450053%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522Card%2520with%2520header%2522%250A%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card_body%2522%253E%250A%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520Visit%2520ten%2520places%2520on%2520our%2520planet%2520that%2520are%2520undergoing%2520the%2520biggest%2520changes%250A%2520%2520%2520%2520%2520%2520today.%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card_footer%2520flex%2522%253E%250A%2520%2520%2520%2520%253Cul%2520class%253D%2522flex%2520justify_even%2520align_center%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522text_uppercase%2522%253ERead%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522text_uppercase%2522%253EBookmark%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-heart-o%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csvg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520xmlns%253D%2522http%253A%252F%252Fwww.w3.org%252F2000%252Fsvg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520width%253D%252216%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520height%253D%252216%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520fill%253D%2522currentColor%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522bi%2520bi-share%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520viewBox%253D%25220%25200%252016%252016%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cpath%2520d%253D%2522M13.5%25201a1.5%25201.5%25200%25201%25200%25200%25203%25201.5%25201.5%25200%25200%25200%25200-3zM11%25202.5a2.5%25202.5%25200%25201%25201%2520.603%25201.628l-6.718%25203.12a2.499%25202.499%25200%25200%25201%25200%25201.504l6.718%25203.12a2.5%25202.5%25200%25201%25201-.488.876l-6.718-3.12a2.5%25202.5%25200%25201%25201%25200-3.256l6.718-3.12A2.5%25202.5%25200%25200%25201%252011%25202.5zm-8.5%25204a1.5%25201.5%25200%25201%25200%25200%25203%25201.5%25201.5%25200%25200%25200%25200-3zm11%25205.5a1.5%25201.5%25200%25201%25200%25200%25203%25201.5%25201.5%25200%25200%25200%25200-3z%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fsvg%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522card_more_option%2522%253E...%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                                style="width: 1024px; height: 949px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin" id="iframe">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div>
+                    <h4 class="content_title">Card With Buttons</h4>
+                    <p class="content_subtitle">
+                        Cards will have only buttons to perform actions on the card.
+                    </p>
+                    <div class="card_container">
+                        <div class="basic_card basic_card_with_btns">
+                            <div class='basic_card_image'>
+                                <img src='https://images.unsplash.com/photo-1536323760109-ca8c07450053'
+                                    alt='Card with buttons' loading='lazy' />
+                            </div>
+                            <div class="card_body">
+                                <h3>Our Changing Planet</h3>
+                                <p>by Kurt Wagner</p>
+                                <p>Visit ten places on our planet that are undergoing the biggest changes today.</p>
+                            </div>
+                            <div class="card_footer flex">
+                                <ul class="flex justify_start align_center">
+                                    <li class="text_uppercase">Read</li>
+                                    <li class="text_uppercase">Bookmark</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="code_snippet relative_pos">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28230%2C230%2C230%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=19px&ph=22px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522basic_card%2520basic_card_with_btns%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522basic_card_image%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fimages.unsplash.com%252Fphoto-1536323760109-ca8c07450053%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522Card%2520with%2520buttons%2522%250A%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card_body%2522%253E%250A%2520%2520%2520%2520%253Ch3%253EOur%2520Changing%2520Planet%253C%252Fh3%253E%250A%2520%2520%2520%2520%253Cp%253Eby%2520Kurt%2520Wagner%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520Visit%2520ten%2520places%2520on%2520our%2520planet%2520that%2520are%2520undergoing%2520the%2520biggest%2520changes%250A%2520%2520%2520%2520%2520%2520today.%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card_footer%2520flex%2522%253E%250A%2520%2520%2520%2520%253Cul%2520class%253D%2522flex%2520justify_start%2520align_center%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522text_uppercase%2522%253ERead%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522text_uppercase%2522%253EBookmark%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                                style="width: 723px; height: 559px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin" id="iframe">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div>
+                    <h4 class="content_title">Card With Icons</h4>
+                    <p class="content_subtitle">
+                        Cards will have only icons to perform actions on the card.
+                    </p>
+                    <div class="card_container">
+                        <div class="basic_card basic_card_with_icons">
+                            <div class='basic_card_image'>
+                                <img src='https://images.unsplash.com/photo-1536323760109-ca8c07450053'
+                                    alt='Card with icons' loading='lazy' />
+                            </div>
+                            <div class="card_body">
+                                <h3>Our Changing Planet</h3>
+                                <p>by Kurt Wagner</p>
+                                <p>Visit ten places on our planet that are undergoing the biggest changes today.</p>
+                            </div>
+                            <div class="card_footer flex">
+                                <ul class="flex justify_end align_center">
+                                    <li><i class="fa fa-heart-o"></i></li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                            <path
+                                                d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                                        </svg>
+                                    </li>
+                                    <li class="card_more_option">...</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="code_snippet relative_pos">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28230%2C230%2C230%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=19px&ph=22px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522basic_card%2520basic_card_with_icons%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522basic_card_image%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fimages.unsplash.com%252Fphoto-1536323760109-ca8c07450053%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522Card%2520with%2520icons%2522%250A%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card_body%2522%253E%250A%2520%2520%2520%2520%253Ch3%253EOur%2520Changing%2520Planet%253C%252Fh3%253E%250A%2520%2520%2520%2520%253Cp%253Eby%2520Kurt%2520Wagner%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520Visit%2520ten%2520places%2520on%2520our%2520planet%2520that%2520are%2520undergoing%2520the%2520biggest%2520changes%250A%2520%2520%2520%2520%2520%2520today.%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card_footer%2520flex%2522%253E%250A%2520%2520%2520%2520%253Cul%2520class%253D%2522flex%2520justify_end%2520align_center%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-heart-o%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csvg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520xmlns%253D%2522http%253A%252F%252Fwww.w3.org%252F2000%252Fsvg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520width%253D%252216%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520height%253D%252216%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520fill%253D%2522currentColor%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522bi%2520bi-share%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520viewBox%253D%25220%25200%252016%252016%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cpath%2520d%253D%2522M13.5%25201a1.5%25201.5%25200%25201%25200%25200%25203%25201.5%25201.5%25200%25200%25200%25200-3zM11%25202.5a2.5%25202.5%25200%25201%25201%2520.603%25201.628l-6.718%25203.12a2.499%25202.499%25200%25200%25201%25200%25201.504l6.718%25203.12a2.5%25202.5%25200%25201%25201-.488.876l-6.718-3.12a2.5%25202.5%25200%25201%25201%25200-3.256l6.718-3.12A2.5%25202.5%25200%25200%25201%252011%25202.5zm-8.5%25204a1.5%25201.5%25200%25201%25200%25200%25203%25201.5%25201.5%25200%25200%25200%25200-3zm11%25205.5a1.5%25201.5%25200%25201%25200%25200%25203%25201.5%25201.5%25200%25200%25200%25200-3z%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fsvg%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522card_more_option%2522%253E...%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                                style="width: 1024px; height: 875px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin" id="iframe">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <!-- <div>
+                    <h4 class="component_title">Profile Card</h4>
+                    <p class="content_subtitle">
+                        Profile Cards will have only buttons to perform actions on the card.
+                    </p>
+                    <div class="card_container">
+                        <div class='basic_card'>
+                            <div class="card_container_horizontal flex align_start">
+                                <div class="card_image">
+                                    <img src='https://images.unsplash.com/photo-1536323760109-ca8c07450053'
+                                        alt='Profile card' loading='lazy' />
+                                </div>
+                                <div class="card_body">
+                                    <h3>Our Changing Planet</h3>
+                                    <p>by Kurt Wagner</p>
+                                </div>
+                            </div>
+                            <div class="card_footer flex">
+                                <ul class="flex justify_even align_center">
+                                    <li class="text_uppercase">Read</li>
+                                    <li class="text_uppercase">Bookmark</li>
+                                    <li><i class="fa fa-heart-o"></i></li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                            <path
+                                                d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                                        </svg>
+                                    </li>
+                                    <li class="card_more_option">...</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="code_snippet relative_pos">
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28230%2C230%2C230%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=19px&ph=22px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522basic_card%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card_container_horizontal%2520flex%2520align_start%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card_image%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fimages.unsplash.com%252Fphoto-1536323760109-ca8c07450053%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522Profile%2520card%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card_body%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%253EOur%2520Changing%2520Planet%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253Eby%2520Kurt%2520Wagner%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card_footer%2520flex%2522%253E%250A%2520%2520%2520%2520%253Cul%2520class%253D%2522flex%2520justify_even%2520align_center%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522text_uppercase%2522%253ERead%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522text_uppercase%2522%253EBookmark%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-heart-o%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csvg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520xmlns%253D%2522http%253A%252F%252Fwww.w3.org%252F2000%252Fsvg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520width%253D%252216%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520height%253D%252216%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520fill%253D%2522currentColor%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522bi%2520bi-share%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520viewBox%253D%25220%25200%252016%252016%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cpath%2520d%253D%2522M13.5%25201a1.5%25201.5%25200%25201%25200%25200%25203%25201.5%25201.5%25200%25200%25200%25200-3zM11%25202.5a2.5%25202.5%25200%25201%25201%2520.603%25201.628l-6.718%25203.12a2.499%25202.499%25200%25200%25201%25200%25201.504l6.718%25203.12a2.5%25202.5%25200%25201%25201-.488.876l-6.718-3.12a2.5%25202.5%25200%25201%25201%25200-3.256l6.718-3.12A2.5%25202.5%25200%25200%25201%252011%25202.5zm-8.5%25204a1.5%25201.5%25200%25201%25200%25200%25203%25201.5%25201.5%25200%25200%25200%25200-3zm11%25205.5a1.5%25201.5%25200%25201%25200%25200%25203%25201.5%25201.5%25200%25200%25200%25200-3z%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fsvg%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522card_more_option%2522%253E...%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                                style="width: 1024px; height: 875px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin" id="iframe">
+                            </iframe>
+                        </div>
+                    </div>
+                </div> -->
+                <br />
+                <div>
+                    <h4 class="content_title">Profile Card With Badge </h4>
+                    <p class="content_subtitle">Card with Badge will be displayed on top right to notify about the new arrival.</p>
+                    <div class="card_container_badge">
+                        <div class='basic_card'>
+                            <div class="card_container_horizontal relative_pos">
+                                <div class="card_image">
+                                    <img src='https://images.unsplash.com/photo-1536323760109-ca8c07450053'
+                                        alt='Profile card with badge' loading='lazy' />
+                                </div>
+                                <div class="card_body">
+                                    <h3>Our Changing Planet</h3>
+                                    <p>by Kurt Wagner</p>
+                                </div>
+                                <span class="card_badge">New</span>
+                            </div>
+                            <div class="card_footer flex">
+                                <ul class="flex justify_even align_center">
+                                    <li class="text_uppercase">Read</li>
+                                    <li class="text_uppercase">Bookmark</li>
+                                    <!-- <li><i class="fa fa-heart-o"></i></li> -->
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                            <path
+                                                d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                                        </svg>
+                                    </li>
+                                    <li class="card_more_option">...</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code_snippet relative_pos">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28230%2C230%2C230%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=19px&ph=22px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card_container_badge%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522basic_card%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card_container_horizontal%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card_image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fimages.unsplash.com%252Fphoto-1536323760109-ca8c07450053%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522Profile%2520card%2520with%2520badge%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520loading%253D%2522lazy%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card_body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253EOur%2520Changing%2520Planet%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253Eby%2520Kurt%2520Wagner%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card_footer%2520flex%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522flex%2520justify_even%2520align_center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522text_uppercase%2522%253ERead%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522text_uppercase%2522%253EBookmark%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-heart-o%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csvg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520xmlns%253D%2522http%253A%252F%252Fwww.w3.org%252F2000%252Fsvg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520width%253D%252216%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520height%253D%252216%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520fill%253D%2522currentColor%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522bi%2520bi-share%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520viewBox%253D%25220%25200%252016%252016%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cpath%2520d%253D%2522M13.5%25201a1.5%25201.5%25200%25201%25200%25200%25203%25201.5%25201.5%25200%25200%25200%25200-3zM11%25202.5a2.5%25202.5%25200%25201%25201%2520.603%25201.628l-6.718%25203.12a2.499%25202.499%25200%25200%25201%25200%25201.504l6.718%25203.12a2.5%25202.5%25200%25201%25201-.488.876l-6.718-3.12a2.5%25202.5%25200%25201%25201%25200-3.256l6.718-3.12A2.5%25202.5%25200%25200%25201%252011%25202.5zm-8.5%25204a1.5%25201.5%25200%25201%25200%25200%25203%25201.5%25201.5%25200%25200%25200%25200-3zm11%25205.5a1.5%25201.5%25200%25201%25200%25200%25203%25201.5%25201.5%25200%25200%25200%25200-3z%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fsvg%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522card_more_option%2522%253E...%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cspan%2520class%253D%2522card_badge%2522%253ENew%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A"
+                            style="width: 1024px; height: 931px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin" id="iframe">
+                        </iframe>
+                    </div>
+                </div>
+                <br />
+                <div>
+                    <h4 class="content_title">E-Commerce Card </h4>
+                    <p class="content_subitle">
+                        eCommerce Card is used to display the products details i.e., Product, Name, Type, Fixed badge, Price, Discount and stock.
+                    </p>
+                    <div class="ecommerce_card flex_column">
+                        <div class="product_image">
+                            <i class='fa fa-heart-o product_wishlist'></i>
+                        </div>
+                        <div class="product_details flex flex_dcolumn">
+                            <h5 class="flex justify_spacebtw">
+                                <span class="product_review">
+                                    <i class='fa fa-star'></i>
+                                    <i class='fa fa-star'></i>
+                                    <i class='fa fa-star'></i>
+                                    <i class='fa fa-star-half-empty'></i>
+                                    <i class='fa fa-star-o star_empty'></i>
+                                    <span>3.5</span>
+                                </span>
+                                <span class="product_offer">
+                                    25% off
+                                </span>
+                            </h5>
+                            <div class="product_info">
+                                <h2 class="product_brand">Product Brand</h2>
+                                <h4 class="product_title">Product title.</h4>
+                            </div>
+                            <div class="product_footer flex justify_spacebtw align_center">
+                                <div class="product_price">
+                                    <span class="product_discount_price">Rs. 800</span>
+                                    <span class="product_original_price">Rs. 1600</span>
+                                </div>
+                                <button class="product_add_cart">
+                                    Add to cart
+                                    <i class='fa fa-cart-plus'></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code_snippet relative_pos">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28230%2C230%2C230%2C1%29&t=one-light&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=19px&ph=22px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522ecommerce_card%2520flex_column%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522product_image%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-heart-o%2520product_wishlist%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522product_details%2520flex%2520flex_dcolumn%2522%253E%250A%2520%2520%2520%2520%253Ch5%2520class%253D%2522flex%2520justify_spacebtw%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522product_review%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star-half-empty%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star-o%2520star_empty%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E3.5%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522product_offer%2522%253E25%2525%2520off%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fh5%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522product_info%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522product_brand%2522%253EProduct%2520Brand%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522product_title%2522%253EProduct%2520title.%253C%252Fh4%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522product_footer%2520flex%2520justify_spacebtw%2520align_center%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522product_price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522product_discount_price%2522%253ERs.%2520800%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522product_original_price%2522%253ERs.%25201600%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522product_add_cart%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Add%2520to%2520cart%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-cart-plus%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                            style="width: 647px; height: 726px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin" id="iframe">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+<script src="../../javascript/toggle.js"></script>
+<script src="../../javascript/iframe.js"></script>
+
+</html>

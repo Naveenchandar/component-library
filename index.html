@@ -2,96 +2,78 @@
 <html lang="en">
 
 <head>
+    <!-- meta tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="author" content="Naveen Chandar">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Landing Page using HTML, CSS & Javascript</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="./css/variables.css" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/common.css" />
+    <meta name="author" content="Naveen Chandar" />
+    <meta name="description" content="Retro UI a CSS component library for your awesome UI." />
+    <!-- stylesheets -->
     <link rel="stylesheet" href="./css/index.css" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Retro UI | Home</title>
 </head>
 
 <body>
-    <section class="container_body">
-        <!-- ==== HEADER ==== -->
-        <header class="container header">
-            <!-- ==== NAVBAR ==== -->
-            <nav class="nav flex_row justify_spacebtw">
-                <div class="logo">
-                    <h2>Naveen Ui.</h2>
-                </div>
+    <nav class="navbar flex_row align_center flex_wrap py-2 px-6 fixed_pos w_100">
+        <a href=" ../index.html">
+            <h3 class="brand_name">Retro UI</h3>
+        </a>
+        <button class="menu hide"><i class="fa fa-bars"></i></button>
+        <ul class="ml-auto flex_row align_center font_bold">
+            <li class="ml-4">
+                <a href="#" target="_blank">
+                    <i class="fa fa-github social_icons"></i>
+                </a>
+            </li>
+            <li class="ml-4">
+                <a href="#" target="_blank">
+                    <i class="fa fa-linkedin-square social_icons"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
-                <div class="nav_menu" id="nav_menu">
-                    <button class="close_btn" id="close_btn">
-                        <i class="ri-close-fill"></i>
-                    </button>
-
-                    <ul class="nav_menu_list flex align_center">
-                        <li class="nav_menu_item">
-                            <a href="#" class="nav_menu_link">Docs</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <button class="toggle_btn" id="toggle_btn">
-                    <i class="ri-menu-line"></i>
-                </button>
-            </nav>
-        </header>
-
-        <section class="wrapper">
-            <div class="container">
-                <div class="grid_cols_2 w-100 h-100">
-                    <div class="grid_item_1">
-                        <h1 class="main_heading">
-                            Welcome to <span>Naveen Ui.</span>
-                            <br />
-                            Develop anything.
-                        </h1>
-                        <p class="info-text">
-                            Build a beautiful, modern website with flexible components built
-                            from scratch.
-                        </p>
-
-                        <div class="btn_wrapper flex">
-                            <button class="btn get_start_btn flex_row">
-                                Get Started<i class="ri-arrow-right-line"></i>
-                            </button>
-
-                            <button class="btn github_btn">Github</button>
-                        </div>
-                    </div>
-                    <div class="grid_item_2 w-100 h-100">
-                        <div class="img_wrapper">
-                            <img src="./assets//build-websites.svg" alt="Build Websites" class="w-100 h-100" />
-                        </div>
-                    </div>
+    <main class="main_container flex_row flex_center w_screen_100 m_auto w_max_100">
+        <div class="text_left mx-6">
+            <h1 class="text-2xl mb-5 font_bolder brand_name">Retro UI</h1>
+            <h3>Build fast and elegant user interfaces.</h3>
+            <h3>Retro UI - component library for faster development.</h3>
+            <div class="mt-4 p-1">
+                <div>
+                    <a class="transition_3_ease mt-1 py-1 px-2 mr-1 rounded_sm cta_primary"
+                        href="./documentation/index.html">
+                        Get started
+                    </a>
+                    <a class="transition_3_ease mt-1 py-1 px-2 rounded_sm cta_secondary" href="#"
+                        target="_blank">Github</a>
                 </div>
             </div>
-        </section>
-
-    </section>
-    <!-- <footer class="footer text-center">
-        <div class="footer-header">Made with <span class="primary-text-color">&lt;/&gt;</span> by Naveen Chandar</div>
-        <ul class="inline-list list-style-none footer-social-icons">
-            <li class="list-inline-item"><a class="link-no-style" href="https://github.com/AnkitaBagale"><i
-                        class="fab fa-github"></i></a></li>
-            <li class="list-inline-item"><a class="link-no-style" href="https://twitter.com/AnkitaB1108"><i
-                        class="fab fa-twitter"></i></a></li>
-            <li class="list-inline-item"><a class="link-no-style"
-                    href="https://www.linkedin.com/in/ankita-bagale1108/"><i class="fab fa-linkedin-in"></i></a></li>
-        </ul>
-        <div class="text-light-weight body-cp-md footer-copyright">© 2021 Naveen Ui</div>
-    </footer> -->
+        </div>
+        <div class="grid_item_2">
+            <div class="img_wrapper w_100">
+                <img src="./assets//build-websites.svg" alt="Build Websites" />
+            </div>
+        </div>
+    </main>
 </body>
-<!-- <script>
-    const copyRight = document.getElementsByClassName('footer-copyright');
-    copyRight[0].innerHTML = `© ${new Date().getFullYear()} Naveen Ui`
-</script> -->
+<script>
+    const menuIcon = document.querySelector(".menu");
+    const closeSidebar = document.querySelector(".close");
+    const sidebar = document.querySelector(".sidebar");
+
+    menuIcon.addEventListener("click", () =>
+        sidebar.classList.add("sidebar_toggle")
+    );
+
+    closeSidebar.addEventListener("click", () =>
+        sidebar.classList.remove("sidebar_toggle")
+    );
+
+    const navbar = document.querySelector(".side-navbar");
+    const toggleNavbar = document.querySelector(".toggle-navbar");
+    const handleToggle = () => navbar.classList.toggle("side-navbar-width");
+    toggleNavbar.addEventListener("click", handleToggle);
+
+</script>
 
 </html>

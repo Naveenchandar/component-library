@@ -28,7 +28,7 @@
 .avatar_sm {
     width: 4rem;
     height: 4rem;
-    font-size: 1rem;
+    font-size: var(--font-size);
 }
 
 .avatar_xs {
@@ -37,11 +37,11 @@
 }
 
 .avatar_sm, .avatar_xs {
-    font-size: 1rem;
+    font-size: var(--font-size);
 }
 
 .avatar_text {
-    background-color: red;
+    background-color: var(--red);
     border-radius: 50%;
 }
 
@@ -52,7 +52,7 @@
 .avatar_status {
     position: absolute;
     display: inline-block;
-    border: white solid 2px;
+    border: 2px solid var(--white);
     border-radius: 50%;
     font-weight: 700;
     font-size: 70%;
@@ -65,15 +65,15 @@
 }
 
 .status_online {
-    background-color: green;
+    background-color: var(--green);
 }
 
 .status_offline {
-    background-color: gray;
+    background-color: var(--gray);
 }
 
 .status_busy {
-    background-color: red;
+    background-color: var(--red);
 }
 
 .status_lg {
@@ -100,8 +100,6 @@
     bottom: 0.2rem;
 }
 
-.avatar_text, .avatar_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.avatar span {
+    font-size: inherit;
 }
