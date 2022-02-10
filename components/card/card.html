@@ -21,12 +21,12 @@
             <button class="menu hide"><i class="fa fa-bars"></i></button>
             <ul class="ml-auto flex_row align_center font_bold">
                 <li class="ml-4">
-                    <a href="#" target="_blank">
+                    <a href="https://github.com/Naveenchandar" target="_blank">
                         <i class="fa fa-github social_icons"></i>
                     </a>
                 </li>
                 <li class="ml-4">
-                    <a href="#" target="_blank">
+                    <a href="https://www.linkedin.com/in/naveen-ram/" target="_blank">
                         <i class="fa fa-linkedin-square social_icons"></i>
                     </a>
                 </li>
@@ -59,7 +59,7 @@
                     <a href="../card/card.html#card" class="block w_100">Card</a>
                 </li>
                 <li class="py-1 px-2 m-1 ml-4 sidebar_item">
-                    <a href="../card/card.html#card" class="block w_100">Grid</a>
+                    <a href="../grid/grid.html#grid" class="block w_100">Grid</a>
                 </li>
                 <li class="py-1 px-2 m-1 ml-4 sidebar_item">
                     <a href="../image/image.html#image" class="block w_100">Image</a>
@@ -71,54 +71,56 @@
                     <a href="../list/list.html#list" class="block w_100">List</a>
                 </li>
                 <li class="py-1 px-2 m-1 ml-4 sidebar_item">
-                    <a href="../badge/badge.html" class="block w_100">Navigation</a>
+                    <a href="../navigation/navigation.html" class="block w_100">Navigation</a>
                 </li>
                 <li class="py-1 px-2 m-1 ml-4 sidebar_item">
-                    <a href="../badge/badge.html" class="block w_100">Rating</a>
+                    <a href="../ratings/ratings.html#ratings" class="block w_100">Rating</a>
                 </li>
                 <li class="py-1 px-2 m-1 ml-4 sidebar_item">
-                    <a href="../badge/badge.html" class="block w_100">Text Utilities</a>
+                    <a href="../text-utilities/text-utilities.html" class="block w_100">Text Utilities</a>
                 </li>
             </ul>
         </aside>
         <main class="main_container p-1">
-            <h2 class="component_title">Card</h2>
-            <p class="component_subtitle">
-                Cards are surfaces that display content and actions on a single topic.
-                They should be easy to scan for relevant and actionable information. Elements, like text and images,
-                should be placed on them in a way that clearly indicates hierarchy.
-            </p>
-            <section class="flex_row card_section flex_dcolumn">
+            <section>
+                <h2 class="component_title m-1">Card</h2>
+                <p class="component_subtitle m-1">
+                    Cards are surfaces that display content and actions on a single topic.
+                    They should be easy to scan for relevant and actionable information. Elements, like text and images,
+                    should be placed on them in a way that clearly indicates hierarchy.
+                </p>
                 <div>
-                    <h4 class="content_title">Basic Card</h4>
-                    <p class="content_subtitle">
+                    <h3 class="content_title m-1">Basic Card</h3>
+                    <p class="content_subtitle m-1">
                         Basic Card is the one that contains an Image, Title, Subtitle,Text & perform actions.
                     </p>
                     <div class="card_container">
-                        <div class="basic_card">
-                            <div class='basic_card_image'>
-                                <img src='https://images.unsplash.com/photo-1536323760109-ca8c07450053' alt='Basic card'
-                                    loading='lazy' />
-                            </div>
-                            <div class="card_body">
-                                <h3>Title</h3>
-                                <p>subtitle</p>
-                                <p>Visit ten places on our planet that are undergoing the biggest changes today.</p>
-                            </div>
-                            <div class="card_footer flex">
-                                <ul class="flex align_center justify_even">
-                                    <li class="text_uppercase">Read</li>
-                                    <li class="text_uppercase">Bookmark</li>
-                                    <!-- <li><i class="fa fa-heart-o"></i></li> -->
-                                    <li>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
-                                            <path
-                                                d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
-                                        </svg>
-                                    </li>
-                                    <li class="card_more_option">...</li>
-                                </ul>
+                        <div class="border py-4 my-2 flex flex_row">
+                            <div class="basic_card">
+                                <div class='basic_card_image'>
+                                    <img src='https://images.unsplash.com/photo-1536323760109-ca8c07450053'
+                                        alt='Basic card' loading='lazy' />
+                                </div>
+                                <div class="card_body">
+                                    <h3>Title</h3>
+                                    <p>subtitle</p>
+                                    <p>Visit ten places on our planet that are undergoing the biggest changes today.</p>
+                                </div>
+                                <div class="card_footer flex">
+                                    <ul class="flex align_center justify_even">
+                                        <li class="text_uppercase">Read</li>
+                                        <li class="text_uppercase">Bookmark</li>
+                                        <!-- <li><i class="fa fa-heart-o"></i></li> -->
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                                            </svg>
+                                        </li>
+                                        <li class="card_more_option">...</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="code_snippet relative_pos">
@@ -132,37 +134,39 @@
                 </div>
                 <br />
                 <div>
-                    <h4 class="content_title">Card With Text Over Media</h4>
-                    <p class="content_subtitle">
+                    <h3 class="content_title m-1">Card With Text Over Media</h3>
+                    <p class="content_subtitle m-1">
                         Text and subtitle will be placed as an overlay.
                     </p>
                     <div class="card_container">
-                        <div class="basic_card basic_card_text_overlap">
-                            <div class='basic_card_image'>
-                                <img src='https://images.unsplash.com/photo-1536323760109-ca8c07450053'
-                                    alt='Text over card' loading='lazy' />
-                            </div>
-                            <div class="overlay_text align_selfend">
-                                <h3 class="overlay_title">Title</h3>
-                                <p class="overlay_subtitle">Subtitle</p>
-                            </div>
-                            <div class="card_body">
-                                <p>Visit ten places on our planet that are undergoing the biggest changes today.</p>
-                            </div>
-                            <div class="card_footer flex">
-                                <ul class="flex justify_even align_center">
-                                    <li class="text_uppercase">Read</li>
-                                    <li class="text_uppercase">Bookmark</li>
-                                    <!-- <li><i class="fa fa-heart-o"></i></li> -->
-                                    <li>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
-                                            <path
-                                                d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
-                                        </svg>
-                                    </li>
-                                    <li class="card_more_option">...</li>
-                                </ul>
+                        <div class="border py-4 my-2 flex flex_row">
+                            <div class="basic_card basic_card_text_overlap">
+                                <div class='basic_card_image'>
+                                    <img src='https://images.unsplash.com/photo-1536323760109-ca8c07450053'
+                                        alt='Text over card' loading='lazy' />
+                                </div>
+                                <div class="overlay_text align_selfend">
+                                    <h3 class="overlay_title">Title</h3>
+                                    <p class="overlay_subtitle">Subtitle</p>
+                                </div>
+                                <div class="card_body">
+                                    <p>Visit ten places on our planet that are undergoing the biggest changes today.</p>
+                                </div>
+                                <div class="card_footer flex">
+                                    <ul class="flex justify_even align_center">
+                                        <li class="text_uppercase">Read</li>
+                                        <li class="text_uppercase">Bookmark</li>
+                                        <!-- <li><i class="fa fa-heart-o"></i></li> -->
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                                            </svg>
+                                        </li>
+                                        <li class="card_more_option">...</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="code_snippet relative_pos">
@@ -176,37 +180,39 @@
                 </div>
                 <br />
                 <div>
-                    <h4 class="content_title">Card With Header</h4>
-                    <p class="content_subtitle">
+                    <h3 class="content_title m-1">Card With Header</h3>
+                    <p class="content_subtitle m-1">
                         Header will be placed with the card which displays the title and subtitle information.
                     </p>
                     <div class="card_container">
-                        <div class="basic_card basic_card_with_header">
-                            <div class='card_header'>
-                                <h3 class="card_header_title">Our Changing Planet</h3>
-                                <p class="card_header_subtitle">by Kurt Wagner</p>
-                            </div>
-                            <div>
-                                <img src='https://images.unsplash.com/photo-1536323760109-ca8c07450053'
-                                    alt='Card with header' loading='lazy' />
-                            </div>
-                            <div class="card_body">
-                                <p>Visit ten places on our planet that are undergoing the biggest changes today.</p>
-                            </div>
-                            <div class="card_footer flex">
-                                <ul class="flex justify_even align_center">
-                                    <li class="text_uppercase">Read</li>
-                                    <li class="text_uppercase">Bookmark</li>
-                                    <!-- <li><i class="fa fa-heart-o"></i></li> -->
-                                    <li>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
-                                            <path
-                                                d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
-                                        </svg>
-                                    </li>
-                                    <li class="card_more_option">...</li>
-                                </ul>
+                        <div class="border py-4 my-2 flex flex_row">
+                            <div class="basic_card basic_card_with_header">
+                                <div class='card_header'>
+                                    <h3 class="card_header_title">Our Changing Planet</h3>
+                                    <p class="card_header_subtitle">by Kurt Wagner</p>
+                                </div>
+                                <div>
+                                    <img src='https://images.unsplash.com/photo-1536323760109-ca8c07450053'
+                                        alt='Card with header' loading='lazy' />
+                                </div>
+                                <div class="card_body">
+                                    <p>Visit ten places on our planet that are undergoing the biggest changes today.</p>
+                                </div>
+                                <div class="card_footer flex">
+                                    <ul class="flex justify_even align_center">
+                                        <li class="text_uppercase">Read</li>
+                                        <li class="text_uppercase">Bookmark</li>
+                                        <!-- <li><i class="fa fa-heart-o"></i></li> -->
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                                            </svg>
+                                        </li>
+                                        <li class="card_more_option">...</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="code_snippet relative_pos">
@@ -220,26 +226,28 @@
                 </div>
                 <br />
                 <div>
-                    <h4 class="content_title">Card With Buttons</h4>
-                    <p class="content_subtitle">
+                    <h3 class="content_title m-1">Card With Buttons</h3>
+                    <p class="content_subtitle m-1">
                         Cards will have only buttons to perform actions on the card.
                     </p>
                     <div class="card_container">
-                        <div class="basic_card basic_card_with_btns">
-                            <div class='basic_card_image'>
-                                <img src='https://images.unsplash.com/photo-1536323760109-ca8c07450053'
-                                    alt='Card with buttons' loading='lazy' />
-                            </div>
-                            <div class="card_body">
-                                <h3>Our Changing Planet</h3>
-                                <p>by Kurt Wagner</p>
-                                <p>Visit ten places on our planet that are undergoing the biggest changes today.</p>
-                            </div>
-                            <div class="card_footer flex">
-                                <ul class="flex justify_start align_center">
-                                    <li class="text_uppercase">Read</li>
-                                    <li class="text_uppercase">Bookmark</li>
-                                </ul>
+                        <div class="border py-4 my-2 flex flex_row">
+                            <div class="basic_card basic_card_with_btns">
+                                <div class='basic_card_image'>
+                                    <img src='https://images.unsplash.com/photo-1536323760109-ca8c07450053'
+                                        alt='Card with buttons' loading='lazy' />
+                                </div>
+                                <div class="card_body">
+                                    <h3>Our Changing Planet</h3>
+                                    <p>by Kurt Wagner</p>
+                                    <p>Visit ten places on our planet that are undergoing the biggest changes today.</p>
+                                </div>
+                                <div class="card_footer flex">
+                                    <ul class="flex justify_start align_center">
+                                        <li class="text_uppercase">Read</li>
+                                        <li class="text_uppercase">Bookmark</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="code_snippet relative_pos">
@@ -253,33 +261,35 @@
                 </div>
                 <br />
                 <div>
-                    <h4 class="content_title">Card With Icons</h4>
-                    <p class="content_subtitle">
+                    <h3 class="content_title m-1">Card With Icons</h3>
+                    <p class="content_subtitle m-1">
                         Cards will have only icons to perform actions on the card.
                     </p>
                     <div class="card_container">
-                        <div class="basic_card basic_card_with_icons">
-                            <div class='basic_card_image'>
-                                <img src='https://images.unsplash.com/photo-1536323760109-ca8c07450053'
-                                    alt='Card with icons' loading='lazy' />
-                            </div>
-                            <div class="card_body">
-                                <h3>Our Changing Planet</h3>
-                                <p>by Kurt Wagner</p>
-                                <p>Visit ten places on our planet that are undergoing the biggest changes today.</p>
-                            </div>
-                            <div class="card_footer flex">
-                                <ul class="flex justify_end align_center">
-                                    <li><i class="fa fa-heart-o"></i></li>
-                                    <li>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
-                                            <path
-                                                d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
-                                        </svg>
-                                    </li>
-                                    <li class="card_more_option">...</li>
-                                </ul>
+                        <div class="border py-4 my-2 flex flex_row">
+                            <div class="basic_card basic_card_with_icons">
+                                <div class='basic_card_image'>
+                                    <img src='https://images.unsplash.com/photo-1536323760109-ca8c07450053'
+                                        alt='Card with icons' loading='lazy' />
+                                </div>
+                                <div class="card_body">
+                                    <h3>Our Changing Planet</h3>
+                                    <p>by Kurt Wagner</p>
+                                    <p>Visit ten places on our planet that are undergoing the biggest changes today.</p>
+                                </div>
+                                <div class="card_footer flex">
+                                    <ul class="flex justify_end align_center">
+                                        <li><i class="fa fa-heart-o"></i></li>
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                                            </svg>
+                                        </li>
+                                        <li class="card_more_option">...</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="code_snippet relative_pos">
@@ -336,35 +346,39 @@
                 </div> -->
                 <br />
                 <div>
-                    <h4 class="content_title">Profile Card With Badge </h4>
-                    <p class="content_subtitle">Card with Badge will be displayed on top right to notify about the new arrival.</p>
+                    <h3 class="content_title m-1">Profile Card With Badge </h3>
+                    <p class="content_subtitle m-1">Card with Badge will be displayed on top right to notify about the
+                        new
+                        arrival.</p>
                     <div class="card_container_badge">
-                        <div class='basic_card'>
-                            <div class="card_container_horizontal relative_pos">
-                                <div class="card_image">
-                                    <img src='https://images.unsplash.com/photo-1536323760109-ca8c07450053'
-                                        alt='Profile card with badge' loading='lazy' />
+                        <div class="border py-4 my-2 flex flex_row">
+                            <div class='basic_card'>
+                                <div class="card_container_horizontal relative_pos">
+                                    <div class="card_image">
+                                        <img src='https://images.unsplash.com/photo-1536323760109-ca8c07450053'
+                                            alt='Profile card with badge' loading='lazy' />
+                                    </div>
+                                    <div class="card_body">
+                                        <h3>Our Changing Planet</h3>
+                                        <p>by Kurt Wagner</p>
+                                    </div>
+                                    <span class="card_badge">New</span>
                                 </div>
-                                <div class="card_body">
-                                    <h3>Our Changing Planet</h3>
-                                    <p>by Kurt Wagner</p>
+                                <div class="card_footer flex">
+                                    <ul class="flex justify_even align_center">
+                                        <li class="text_uppercase">Read</li>
+                                        <li class="text_uppercase">Bookmark</li>
+                                        <!-- <li><i class="fa fa-heart-o"></i></li> -->
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                                            </svg>
+                                        </li>
+                                        <li class="card_more_option">...</li>
+                                    </ul>
                                 </div>
-                                <span class="card_badge">New</span>
-                            </div>
-                            <div class="card_footer flex">
-                                <ul class="flex justify_even align_center">
-                                    <li class="text_uppercase">Read</li>
-                                    <li class="text_uppercase">Bookmark</li>
-                                    <!-- <li><i class="fa fa-heart-o"></i></li> -->
-                                    <li>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
-                                            <path
-                                                d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
-                                        </svg>
-                                    </li>
-                                    <li class="card_more_option">...</li>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -378,41 +392,44 @@
                 </div>
                 <br />
                 <div>
-                    <h4 class="content_title">E-Commerce Card </h4>
+                    <h3 class="content_title">E-Commerce Card </h3>
                     <p class="content_subitle">
-                        eCommerce Card is used to display the products details i.e., Product, Name, Type, Fixed badge, Price, Discount and stock.
+                        eCommerce Card is used to display the products details i.e., Product, Name, Type, Fixed badge,
+                        Price, Discount and stock.
                     </p>
-                    <div class="ecommerce_card flex_column">
-                        <div class="product_image">
-                            <i class='fa fa-heart-o product_wishlist'></i>
-                        </div>
-                        <div class="product_details flex flex_dcolumn">
-                            <h5 class="flex justify_spacebtw">
-                                <span class="product_review">
-                                    <i class='fa fa-star'></i>
-                                    <i class='fa fa-star'></i>
-                                    <i class='fa fa-star'></i>
-                                    <i class='fa fa-star-half-empty'></i>
-                                    <i class='fa fa-star-o star_empty'></i>
-                                    <span>3.5</span>
-                                </span>
-                                <span class="product_offer">
-                                    25% off
-                                </span>
-                            </h5>
-                            <div class="product_info">
-                                <h2 class="product_brand">Product Brand</h2>
-                                <h4 class="product_title">Product title.</h4>
+                    <div class="border py-4 my-2 flex flex_row">
+                        <div class="ecommerce_card flex_column">
+                            <div class="product_image">
+                                <i class='fa fa-heart-o product_wishlist'></i>
                             </div>
-                            <div class="product_footer flex justify_spacebtw align_center">
-                                <div class="product_price">
-                                    <span class="product_discount_price">Rs. 800</span>
-                                    <span class="product_original_price">Rs. 1600</span>
+                            <div class="product_details flex flex_dcolumn align_selfbaseline w_100">
+                                <h5 class="flex justify_spacebtw">
+                                    <span class="product_review">
+                                        <i class='fa fa-star'></i>
+                                        <i class='fa fa-star'></i>
+                                        <i class='fa fa-star'></i>
+                                        <i class='fa fa-star-half-empty'></i>
+                                        <i class='fa fa-star-o star_empty'></i>
+                                        <span>3.5</span>
+                                    </span>
+                                    <span class="product_offer">
+                                        25% off
+                                    </span>
+                                </h5>
+                                <div class="product_info">
+                                    <h2 class="product_brand">Product Brand</h2>
+                                    <h4 class="product_title">Product title.</h4>
                                 </div>
-                                <button class="product_add_cart">
-                                    Add to cart
-                                    <i class='fa fa-cart-plus'></i>
-                                </button>
+                                <div class="product_footer flex justify_spacebtw align_center">
+                                    <div class="product_price">
+                                        <span class="product_discount_price">Rs. 800</span>
+                                        <span class="product_original_price">Rs. 1600</span>
+                                    </div>
+                                    <button class="product_add_cart">
+                                        Add to cart
+                                        <i class='fa fa-cart-plus'></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -63,6 +63,10 @@
 	align-self: flex-end;
 }
 
+.align_selfbaseline {
+	align-self: flex-end;
+}
+
 .flex_wrap {
 	flex-wrap: wrap;
 }
