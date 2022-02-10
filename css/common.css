@@ -151,7 +151,25 @@
 /* text alignments */
 
 .text_center {
-    text-align: center;
+	text-align: center;
+}
+
+.input {
+	padding: 0.5em;
+	border-radius: 4px;
+	width: var(--width);
+	height: var(--height);
+	border: 1px solid var(--primary-color);
+}
+
+.btn {
+	cursor: pointer;
+	border: 1px solid transparent;
+	padding: 0.5rem;
+	outline: none;
+	font-size: 0.8rem;
+	border-radius: 4px;
+	background-color: var(--white);
 }
 
 .text_left {
