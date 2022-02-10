@@ -83,11 +83,18 @@
             </ul>
         </aside>
         <main class="main_container p-1">
-            <section class="input_section flex flex_column align_center justify_start">
-                <div class="input_container flex flex_column align_start">
-                    <h4 class="component_subtitle">Input Primary</h4>
-                    <div class="input_fields flex align_center justify_center">
-                        <div class="input_group flex align_start flex_dcolumn">
+            <section class="input_section">
+                <h2 class="component_title m-1">Input</h2>
+                <p class="component_subtitle m-1">
+                    Inputs are necessary for user interaction with the website. Inputs are used to take information from
+                    the user, and then save the data to the server, accordingly.
+                </p>
+                <div class="input_container">
+                    <h3 class="content_subtitle m-1">Input Primary</h3>
+                    <p class="content_subtitle m-1">Input displays with border primary color and border radius of 4px by
+                        default.</p>
+                    <div class="input_fields my-2">
+                        <div class="input_group flex align_center flex_dcolumn border py-4 my-2">
                             <label>Label</label>
                             <input type="text" placeholder="input" class="input" />
                         </div>
@@ -101,10 +108,14 @@
                     </div>
                 </div>
                 <br />
-                <div class="input_container flex flex_column align_start">
-                    <h4 class="component_subtitle">Input Curved</h4>
-                    <div class="input_fields flex align_center justify_center">
-                        <div class="input_group flex align_start flex_dcolumn">
+                <div class="input_container">
+                    <h3 class="content_title m-1">Input Curved</h3>
+                    <p class="content_subtitle m-1">
+                        Input curved displays with border-radius of 50% and border as a primary color. You need to add
+                        <code>input_curved</code> to get curved border radius
+                    </p>
+                    <div class="input_fields my-2">
+                        <div class="input_group flex align_center flex_dcolumn border py-4 my-2">
                             <label>Label</label>
                             <input type="text" placeholder="input" class="input input_curved" />
                         </div>
@@ -118,10 +129,14 @@
                     </div>
                 </div>
                 <br />
-                <div class="input_container flex flex_column align_start">
-                    <h4 class="component_subtitle">Input Disabled</h4>
-                    <div class="input_fields flex align_center justify_center">
-                        <div class="input_group flex align_start flex_dcolumn">
+                <div class="input_container">
+                    <h3 class="content_title m-1">Input Disabled</h3>
+                    <p>
+                        Input disabled displayed with grey border and its not actionable. When hover on particular
+                        input, cursor will shown as not-allowed.
+                    </p>
+                    <div class="input_fields my-2">
+                        <div class="input_group flex align_center flex_dcolumn border py-4 my-2">
                             <label>Label</label>
                             <input type="text" placeholder="input" disabled class="input input_disabled" />
                         </div>
@@ -135,10 +150,13 @@
                     </div>
                 </div>
                 <br />
-                <div class="input_container flex flex_column align_start">
-                    <h4 class="component_subtitle">Input Warning</h4>
-                    <div class="input_fields flex align_center justify_center">
-                        <div class="input_group flex align_start flex_dcolumn">
+                <div class="input_container">
+                    <h3 class="content_title m-1">Input Warning</h3>
+                    <p class="content_subtitle m-1">
+                        Input warning displays with a border colored warning. It is used in form validation.
+                    </p>
+                    <div class="input_fields my-2">
+                        <div class="input_group flex align_center flex_dcolumn border py-4 my-2">
                             <label>Label</label>
                             <input type="text" placeholder="input" class="input input_warn" />
                         </div>
@@ -152,10 +170,13 @@
                     </div>
                 </div>
                 <br />
-                <div class="input_container flex flex_column align_start">
-                    <h4 class="component_subtitle">Input Success</h4>
-                    <div class="input_fields flex align_center justify_center">
-                        <div class="input_group flex align_start flex_dcolumn">
+                <div class="input_container">
+                    <h3 class="content_title m-1">Input Success</h3>
+                    <p class="content_subtitle m-1">
+                        Input success displays with a border colored success. It is used in form validation.
+                    </p>
+                    <div class="input_fields my-2">
+                        <div class="input_group flex align_center flex_dcolumn border py-4 my-2">
                             <label>Label</label>
                             <input type="text" placeholder="input" class="input input_success" />
                         </div>
@@ -169,10 +190,13 @@
                     </div>
                 </div>
                 <br />
-                <div class="input_container flex flex_column align_start">
-                    <h4 class="component_subtitle">Input Error</h4>
-                    <div class="input_fields flex align_center justify_center">
-                        <div class="input_group flex align_start flex_dcolumn">
+                <div class="input_container">
+                    <h3 class="content_title m-1">Input Error</h3>
+                    <p class="content_subtitle m-1">
+                        Input error displays with a border colored red. It is used in form validation.
+                    </p>
+                    <div class="input_fields my-2">
+                        <div class="input_group flex align_center flex_dcolumn border py-4 my-2">
                             <label>Label</label>
                             <input type="text" placeholder="input" class="input input_error" />
                         </div>
@@ -188,13 +212,19 @@
                 <br />
             </section>
             <br />
-            <section class="input_section flex flex_column align_center justify_start">
-                <div class="input_container flex align_start">
-                    <h4 class="component_subtitle">Material Input Primary</h4>
-                    <div class="input_fields flex align_center justify_center">
-                        <div class="input_group material_input flex align_start flex_dcolumn">
-                            <label class="material_label">Label</label>
-                            <input type="text" placeholder="input" class="input" />
+            <section class="input_section">
+                <div class="input_container my-2">
+                    <h3 class="content_title m-1">Material Input Primary</h3>
+                    <p class="content_subtitle m-1">
+                        Material Input Primary displays with a primary border color with label placed on top left of
+                        input.
+                    </p>
+                    <div class="input_fields my-2">
+                        <div class="input_group border p-4 my-2">
+                            <div class="material_input">
+                                <label class="material_label">Label</label>
+                                <input type="text" placeholder="input" class="input" />
+                            </div>
                         </div>
                     </div>
                     <div class="code_snippet relative_pos">
@@ -206,12 +236,18 @@
                     </div>
                 </div>
                 <br />
-                <div class="input_container flex">
-                    <h4 class="component_subtitle">Material Input Curved</h4>
-                    <div class="input_fields flex align_center justify_center">
-                        <div class="input_group material_input flex align_start flex_dcolumn">
-                            <label class="material_label">Label</label>
-                            <input type="text" placeholder="input" class="input input_curved" />
+                <div class="input_container my-2">
+                    <h3 class="content_title m-1">Material Input Curved</h3>
+                    <p class="content_subtitle m-1">
+                        Material Input curved displays with border-radius of 50% and border as a primary color with
+                        label placed on top left of input.
+                    </p>
+                    <div class="input_fields my-2">
+                        <div class="input_group border p-4 my-2">
+                            <div class="material_input">
+                                <label class="material_label">Label</label>
+                                <input type="text" placeholder="input" class="input input_curved" />
+                            </div>
                         </div>
                     </div>
                     <div class="code_snippet relative_pos">
@@ -223,12 +259,18 @@
                     </div>
                 </div>
                 <br />
-                <div class="input_container flex">
-                    <h4 class="component_subtitle">Material Input Disabled</h4>
-                    <div class="input_fields flex align_center justify_center">
-                        <div class="input_group material_input flex align_start flex_dcolumn">
-                            <label class="material_label">Label</label>
-                            <input type="text" placeholder="input" class="input input_disabled" />
+                <div class="input_container my-2">
+                    <h3 class="content_title m-1">Material Input Disabled</h3>
+                    <p class="content_subtitle m-1">
+                        Material Input disabled displayed with grey border with label placed on top left of input and
+                        its not actionable. When hover on particular input, cursor will shown as not-allowed.
+                    </p>
+                    <div class="input_fields my-2">
+                        <div class="input_group border p-4 my-2">
+                            <div class="material_input">
+                                <label class="material_label">Label</label>
+                                <input type="text" placeholder="input" class="input input_disabled" />
+                            </div>
                         </div>
                     </div>
                     <div class="code_snippet relative_pos">
@@ -240,12 +282,17 @@
                     </div>
                 </div>
                 <br />
-                <div class="input_container flex">
-                    <h4 class="component_subtitle">Material Input Warning</h4>
-                    <div class="input_fields flex align_center justify_center">
-                        <div class="input_group material_input flex align_start flex_dcolumn">
-                            <label class="material_label label_warn">Label</label>
-                            <input type="text" placeholder="input" class="input input_warn" />
+                <div class="input_container my-2">
+                    <h3 class="content_title m-1">Material Input Warning</h3>
+                    <p class="content_subtitle m-1">
+                        Material Input warning displays with a border colored warning. It is used in form validation.
+                    </p>
+                    <div class="input_fields my-2">
+                        <div class="input_group border p-4 my-2">
+                            <div class="material_input">
+                                <label class="material_label label_warn">Label</label>
+                                <input type="text" placeholder="input" class="input input_warn" />
+                            </div>
                         </div>
                     </div>
                     <div class="code_snippet relative_pos">
@@ -257,12 +304,17 @@
                     </div>
                 </div>
                 <br />
-                <div class="input_container flex">
-                    <h4 class="component_subtitle">Material Input Success</h4>
-                    <div class="input_fields flex align_center justify_center">
-                        <div class="input_group material_input flex align_start flex_dcolumn">
-                            <label class="material_label label_success">Label</label>
-                            <input type="text" placeholder="input" class="input input_success" />
+                <div class="input_container my-2">
+                    <h3 class="content_title m-1">Material Input Success</h3>
+                    <p class="content_subtitle m-1">
+                        Material Input success displays with a border colored success. It is used in form validation.
+                    </p>
+                    <div class="input_fields my-2">
+                        <div class="input_group border p-4 my-2">
+                            <div class="material_input">
+                                <label class="material_label label_success">Label</label>
+                                <input type="text" placeholder="input" class="input input_success" />
+                            </div>
                         </div>
                     </div>
                     <div class="code_snippet relative_pos">
@@ -274,12 +326,17 @@
                     </div>
                 </div>
                 <br />
-                <div class="input_container flex">
-                    <h4 class="component_subtitle">Material Input Error</h4>
-                    <div class="input_fields flex align_center justify_center">
-                        <div class="input_group material_input flex align_start flex_dcolumn">
-                            <label class="material_label label_error">Label</label>
-                            <input type="text" placeholder="input" class="input input_error" />
+                <div class="input_container my-2">
+                    <h3 class="content_title m-1">Material Input Error</h3>
+                    <p class="content_subtitle m-1">
+                        Material Input Error displays with a border colored error. It is used in form validation.
+                    </p>
+                    <div class="input_fields my-2">
+                        <div class="input_group border p-4 my-2">
+                            <div class="material_input">
+                                <label class="material_label label_error">Label</label>
+                                <input type="text" placeholder="input" class="input input_error" />
+                            </div>
                         </div>
                     </div>
                     <div class="code_snippet relative_pos">

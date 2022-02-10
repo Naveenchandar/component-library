@@ -81,7 +81,11 @@ p {
 
 .code_snippet,
 .code_snippet iframe {
-	max-width: 95rem;
+	/* max-width: 95rem; */
+	display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
 }
 
 .navbar-snippet {

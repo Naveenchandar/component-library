@@ -22,6 +22,7 @@
     width: var(--width);
     height: var(--height);
     border: 1px solid var(--primary-color);
+    max-width: 30%;
 }
 
 .input_group {
