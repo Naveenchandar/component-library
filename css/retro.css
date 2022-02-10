@@ -1,8 +1,11 @@
 /* utilities */
+@import "./index.css";
+@import "./home.css";
 @import "./common.css";
 @import "./margin.css";
 @import "./padding.css";
 @import "./reset.css";
+@import "./variables.css";
 
 /* components */
 @import "../components/alert/alert.css";
