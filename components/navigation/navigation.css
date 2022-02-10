@@ -1,4 +1,4 @@
-.navbar {
+.nav_bar {
     padding: 1rem;
 }
 
@@ -8,7 +8,7 @@
     padding: 0;
 }
 
-.navbar a {
+.nav_bar a {
     color: var(--white);
     text-decoration: none;
 }
