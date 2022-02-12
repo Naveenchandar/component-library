@@ -103,3 +103,5 @@ To use this project, Include link mentioned below in head tag of html or using i
 - Popover Component
 - Progress Component
 - Timeline Component
+
+***show some love by [starring](https://github.com/Naveenchandar/retro-ui) this repo.***
