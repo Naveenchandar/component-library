@@ -347,3 +347,8 @@
 .primary_text_color {
 	color: var(--primary-color);
 }
+
+.dark_theme {
+	background-color: var(--primary-color-dark);
+	color: var(--white);
+}
