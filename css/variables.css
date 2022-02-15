@@ -23,6 +23,7 @@
   --card-bg: #f5f5f5;
   --background-color: #fafafa;
 	--navigation-bg: #fafafa80;
+  --toast-error: #ff0000;
   /* Length */
   --fixed-header-height: 4.5rem;
   --font-size: 1rem;

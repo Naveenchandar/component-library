@@ -1,0 +1,19 @@
+.toast {
+    background-color: var(--primary-color);
+}
+
+.toast_success {
+    background-color: var(--green);
+}
+
+.toast_error {
+    background-color: var(--toast-error);
+}
+
+.toast_warning {
+    background-color: var(--orange);
+}
+
+.toast, .toast_close {
+    color: var(--white);
+}
