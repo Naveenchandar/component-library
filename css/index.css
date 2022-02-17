@@ -36,7 +36,7 @@ p {
 	grid-area: navbar;
 	/* backdrop-filter: blur(8px); */
 	border-bottom: 1px solid var(--grey);
-	background-color: var(--navigation-bg);
+	background-color: var(--background-color);
 }
 
 .social_icons {
