@@ -213,7 +213,7 @@ p {
 		display: none;
 	}
 
-	.text_left {
+	#home .text_left {
 		margin: 0 2rem;
 	}
 }
