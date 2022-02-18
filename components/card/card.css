@@ -230,3 +230,51 @@
 .card_container_horizontal .card_body p {
     font-size: 1.3rem;
 }
+
+@media screen and (max-width: 87.5em) {
+    #card .basic_card {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 64em) {
+    #card .basic_card {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    #card .basic_card {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 34.5em) {
+    #card .basic_card {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    #card .basic_card {
+        width: var(--width);
+    }
+
+    #card .code_snippet iframe {
+        height: 25em !important;
+    }
+
+    .ecommerce_card .product_add_cart {
+        width: var(--width);
+    }
+
+    .ecommerce_card .product_footer {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .ecommerce_card .product_info {
+        justify-content: center;
+        gap: 1rem;
+    }
+}
