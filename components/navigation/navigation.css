@@ -62,26 +62,26 @@
 }
 
 @media screen and (max-width: 48em) {
-    #navigation .navbar, #navigation .nav_bar {
+    #navigation main .navbar, #navigation main .nav_bar {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
     }
 
-    #navigation .navbar_nav {
+    #navigation main .navbar_nav {
         flex-direction: column;
         align-items: center;
     }
 
-    #navigation .nav_group {
+    #navigation main .nav_group {
         width: 100%;
     }
 
-    #navigation .nav_bar {
+    #navigation main .nav_bar {
         width: 100%;
     }
 
-    #navigation .nav_search {
+    #navigation main .nav_search {
         width: 50%;
         flex-direction: column;
     }
