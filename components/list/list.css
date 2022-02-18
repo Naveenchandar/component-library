@@ -40,7 +40,7 @@
     display: block;
 }
 
-.list_item_action:focus, 
+.list_item_action:focus,
 .list_item_action:hover {
     color: var(--list-hover-color);
     text-decoration: none;
@@ -67,4 +67,18 @@
 
 .list_group_badge .list_group_item:hover .list_badge {
     background-color: var(--red);
+}
+
+@media screen and (max-width:26.5em) {
+    #list .list_group_inline {
+        justify-content: center;
+        width: 250px;
+    }
+
+    #list .list_horizontal {
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0.8rem;
+        border: unset;
+    }
 }

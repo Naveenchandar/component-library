@@ -73,3 +73,9 @@
     left: 1rem;
     padding: 0 0.3rem;
 }
+
+@media screen and (max-width: 48em){
+    .input_fields .input {
+        max-width: 80%;
+    }
+}
