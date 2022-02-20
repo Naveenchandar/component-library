@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
 /* utilities */
-@import url("./margin.css");
-@import url("./padding.css");
+@import url("./margin.min.css");
+@import url("./padding.min.css");
 @import url("./reset.css");
 
 .flex {
