@@ -4,6 +4,7 @@
 :root {
   /* Colors */
   --primary-color: #4723D9;
+  --primary-color-dark: #000106;
   --link-color: #506690;
   --btn-hover-color: #2b50c7;
   --lg-heading: #161c2d;
@@ -32,12 +33,11 @@
   --header-height: 3rem;
   --nav-width: 68px;
   /* Typography */
-  /* --font-family: 'Nunito Sans', sans-serif; */
   --font-family: 'Inter', sans-serif;
   --normal-font-size: 1rem;
   /* Z Index */
   --z-fixed: 10;
-  
+  /* Padding and Margin values */
   --value-1: 0.8rem;
 	--value-2: 1.6rem;
 	--value-3: 2.4rem;

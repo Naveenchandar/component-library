@@ -39,8 +39,10 @@ Retro UI - CSS Component library for faster development. Design, build, and crea
 ## Demo
 Please visit this [link](https://retro-ui-design.netlify.app/).
 
+![Retro UI Gif](./assets/Retro_ui.gif)
+
 ## Screenshot
-![1](./assets/retro_ui_home.png)
+![Retro UI Screenshot](./assets/retro_ui_home.png)
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
 To run locally, run below command in git terminal.
@@ -90,8 +92,16 @@ To use this project, Include link mentioned below in head tag of html or using i
 
 ## ✍️ Contribution <a name = "contribution"></a>
 
-- Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/branch`).
+3. Perfom desired changes needed to the code base.
+4. Stage all your changes (`git add .`)
+3. Commit your changes with a proper commit message (`git commit -m 'Add some feature'`)
+4. Push the changes to your branch (`git push origin feature/branch`)
+5. Open new pull request
+6. Add appropriate title and description to your pull request explaining your changes and efforts done.
 
+NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 
 ## 🎉 Upcoming Features <a name = "upcomingfeatures"></a>
 
