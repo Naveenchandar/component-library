@@ -1,0 +1,28 @@
+.modal_main {
+    display: none;
+}
+
+.modal_main_section {
+    z-index: 5;
+    position: relative;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 10rem;
+    left: 20%;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modal_content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 2rem;
+    border: 1px solid #888;
+    width: 80%;
+}
