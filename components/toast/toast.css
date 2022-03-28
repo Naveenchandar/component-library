@@ -17,3 +17,11 @@
 .toast, .toast_close {
     color: var(--white);
 }
+
+.toast_iframe {
+    width: 580px;
+    height: 261px;
+    border: 0;
+    transform: scale(1);
+    overflow: hidden;
+}
