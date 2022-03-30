@@ -67,3 +67,8 @@
 .list_group_badge .list_group_item:hover .list_badge {
     background-color: var(--red);
 }
+
+.normal_list_group .normal_list_item{
+    list-style-type: initial;
+    padding: 0.75rem;
+}
