@@ -6,7 +6,7 @@
     flex-direction: row;
 }
 
-.badge_container>p,
+.badge_container>.badge_para,
 .badge_container>button {
     position: relative;
 }
