@@ -2,7 +2,6 @@
 
 #card {
     background-color: var(--card-bg);
-    /* font-family: 'Poppins', sans-serif; */
 }
 
 .card_section {
@@ -116,9 +115,8 @@
 }
 
 .card_footer ul li:hover {
-   background-color: var(--primary-color);
     font-weight: 500;
-    color: var(--white);
+    color: var(--black);
     cursor: pointer;
 }
 
@@ -126,19 +124,6 @@
 .basic_card_with_icons>.card_footer {
     padding: 0.5rem 1rem;
 }
-
-/* .card_footer ul li:nth-child(3) {
-    font-size: 1.125rem;
-} */
-
-/* .card_footer ul li:nth-child(4) {
-    width: 1rem;
-    height: 1rem;
-} */
-
-/* .card_footer ul li:nth-child(5) {
-    font-size: 1.25rem;
-} */
 
 .card_container_badge {
     position: relative;
@@ -172,12 +157,17 @@
     position: relative;
 }
 
-.product_wishlist {
+.product_wishlist, .product_close {
     position: absolute;
     right: 0.5rem;
     background: var(--white);
     border-radius: 50%;
     padding: 0.5rem;
+}
+
+.product_wishlist:hover, .product_close:hover {
+    background: var(--btn-hover-color);
+    color: var(--white);
 }
 
 .ecommerce_card .ecommerce_card_h5 {
