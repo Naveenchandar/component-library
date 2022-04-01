@@ -1,0 +1,25 @@
+.grid_group {
+    display: grid;
+    color: var(--white);
+    height: 100px;
+}
+
+.grid_two_column {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid_one {
+    background-color: var(--orange);
+}
+
+.grid_two {
+    background-color: var(--red);
+}
+
+.grid_three {
+    background-color: var(--green);
+}
+
+.grid_three_column {
+    grid-template-columns: repeat(3, 1fr);
+}

@@ -1,0 +1,81 @@
+.component_subtitle {
+    margin: 1.4rem;
+    font-size: 1.4rem;
+    margin-left: 0;
+}
+
+.input_section {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.input_fields{
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.input {
+    padding: 1.3em;
+    border-radius: 4px;
+    min-height: 2rem;
+    padding-left: 0.7em;
+    width: var(--width);
+    height: var(--height);
+    border: 1px solid var(--primary-color);
+    max-width: 30%;
+}
+
+.input_group {
+    gap: 10px;
+}
+
+.input_curved {
+    border-radius: 50px;
+}
+
+.input_warn {
+    border: 1px solid var(--orange);
+}
+
+.label_warn {
+    color: var(--orange);
+}
+
+.input_success {
+    border: 1px solid var(--green);
+}
+
+.label_success {
+    color: var(--green);
+}
+
+.input_error {
+    border: 1px solid var(--red);
+}
+
+.label_error {
+    color: var(--red);
+}
+
+.input_disabled {
+    cursor: not-allowed;
+    border: 1px solid;
+}
+
+.material_input {
+    position: relative;
+}
+
+.material_label {
+    position: absolute;
+    background: var(--white);
+    top: -0.5rem;
+    left: 1rem;
+    padding: 0 0.3rem;
+}
+
+@media screen and (max-width: 48em){
+    .input_fields .input {
+        max-width: 80%;
+    }
+}

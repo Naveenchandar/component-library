@@ -1,0 +1,66 @@
+.badge_container {
+    position: relative;
+    margin: 1rem;
+    padding: 1rem;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.badge_container>.badge_para,
+.badge_container>button {
+    position: relative;
+}
+
+.badge {
+    background-color: var(--red);
+    border-radius: 50%;
+    position: absolute;
+    color: var(--white);
+    font-weight: 700;
+    padding: 0.75rem 0.5rem;
+    font-size: 75%;
+}
+
+.badge_text {
+    top: -2.5rem;
+    right: -3rem;
+    padding: 0.75rem;
+}
+
+.badge_number {
+    display: inline-block;
+    line-height: 0;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    position: absolute;
+    top: -1.35rem;
+    right: -0.8rem;
+}
+
+.badge_number>span {
+    display: inline-block;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.badge_container>button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 4px;
+    border: transparent;
+    height: 3rem;
+    flex-direction: row-reverse;
+    padding: 1.4rem;
+    font-size: 1.5rem;
+    margin-left: 8px;
+}
+
+.badge_left {
+    left: -1.75rem;
+    right: unset;
+    top: -2.5rem;
+}
+
+.badge_group .badge_container {
+    padding: 5rem;
+}
