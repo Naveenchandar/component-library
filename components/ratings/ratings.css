@@ -1,0 +1,12 @@
+.ratings {
+    gap: 20px;
+}
+
+.star_checked {
+    color: var(--orange);
+}
+
+.ratings .fa-star,
+.ratings .fa-star-half-full {
+    font-size: 2rem;
+}

@@ -2,10 +2,14 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 * {
 	margin: 0;
 	padding: 0;
+	font-family: var(--font-family);
+	font-size: var(--font-size);
+	/* transition: .5s; */
 }
 
 *,
@@ -31,7 +35,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 
@@ -66,6 +69,8 @@ table {
 
 a {
 	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
 }
 
 button {
@@ -73,4 +78,62 @@ button {
 	border: none;
 	outline: none;
 	cursor: pointer;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+/* headings */
+h1 {
+	font-size: 4.8rem;
+	line-height: 6.4rem;
+}
+
+h2 {
+	font-size: 3.2rem;
+	line-height: 4rem;
+}
+
+h3 {
+	font-size: 2.4rem;
+	line-height: 3.2rem;
+}
+
+h4 {
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+}
+
+h5 {
+	font-size: 1rem;
+	line-height: 1.6rem;
+}
+
+h6 {
+	font-size: 0.8rem;
+	line-height: 1.2rem;
+}
+
+/* media */
+img,
+iframe,
+video {
+	max-inline-size: 100%;
+	block-size: auto;
+}
+
+/* list */
+ul {
+	list-style: none;
+}
+
+/* text */
+a,
+p,
+label,
+span,
+button,
+article {
+	font-size: 1.6rem;
 }
