@@ -141,6 +141,13 @@ body {
     font-weight: 500;
 }
 
+.card_footer ul li:hover {
+   background-color: var(--primary-color);
+    font-weight: 500;
+    color: var(--white);
+    cursor: pointer;
+}
+
 .basic_card_with_btns>.card_footer,
 .basic_card_with_icons>.card_footer {
     padding: 0 1rem;
@@ -221,6 +228,7 @@ body {
     border: none;
     padding: 1em;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .product_footer {
