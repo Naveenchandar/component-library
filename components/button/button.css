@@ -4,7 +4,7 @@
     border: 1px solid transparent;
     padding: 1em;
     outline: none;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     border-radius: 4px;
     background-color: var(--white);
 }
@@ -42,9 +42,9 @@
 }
 
 .float_btn_container {
-    position: relative;
-    top: 200px;
-    left: 80px;
+    /* position: absolute; */
+    /* top: 200px;
+    left: 80px; */
     z-index: 5;
 }
 
@@ -64,8 +64,6 @@
 }
 
 .float_options li {
-    display: flex;
-    align-items: center;
     padding: 0.5rem;
     gap: 0.5rem;
     padding-left: 0;
@@ -94,4 +92,9 @@
 .float_icon > i
 {
     color: var(--white);
+}
+
+.btn_link:hover {
+    color: var(--primary-color);
+    background-color: #4723d92e;
 }

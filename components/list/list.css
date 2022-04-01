@@ -1,5 +1,5 @@
 .list_group {
-    width: 15rem;
+    width: 30rem;
 }
 
 .list_section {
@@ -12,6 +12,7 @@
     margin-bottom: -1px;
     background-color: var(--white);
     border: 1px solid #00000020;
+    font-size: 1.3rem;
 }
 
 .list_group_item:first-child {
@@ -39,7 +40,7 @@
     display: block;
 }
 
-.list_item_action:focus, 
+.list_item_action:focus,
 .list_item_action:hover {
     color: var(--list-hover-color);
     text-decoration: none;
@@ -53,7 +54,7 @@
     vertical-align: baseline;
     border-radius: 0.25rem;
     padding: 0.5rem;
-    font-size: 0.7rem;
+    font-size: 1rem;
     color: var(--white);
     background-color: var(--primary-color);
 }
@@ -71,4 +72,18 @@
 .normal_list_group .normal_list_item{
     list-style-type: initial;
     padding: 0.75rem;
+}
+
+@media screen and (max-width:26.5em) {
+    #list .list_group_inline {
+        justify-content: center;
+        width: 250px;
+    }
+
+    #list .list_horizontal {
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0.8rem;
+        border: unset;
+    }
 }

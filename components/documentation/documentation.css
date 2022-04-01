@@ -1,0 +1,61 @@
+.highlight {
+	background-color: var(--grey);
+}
+
+.code_snippet,
+.code_snippet iframe {
+	max-width: 95rem;
+}
+
+.navbar-snippet {
+	max-width: 95rem;
+}
+
+.hide {
+	display: none;
+}
+
+.close:hover {
+	color: var(--dark-gray);
+}
+
+#documentation .fa {
+	font-size: 3rem;
+}
+
+@media screen and (max-width: 1024px) {
+
+	#documentation {
+		overflow: hidden;
+	}
+
+	.menu {
+		display: block;
+		color: var(--black);
+		font-size: 2rem;
+		margin-left: 2rem;
+		cursor: pointer;
+	}
+
+	.close {
+		font-size: 2.5rem;
+		color: var(--black);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+
+	.sidebar {
+		position: fixed;
+		top: 0;
+		z-index: 2;
+		width: 0rem;
+		height: 100%;
+		background-color: var(--background-color);
+	}
+
+    .sidebar_title {
+        display: flex;
+    }
+}
