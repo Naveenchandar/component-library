@@ -1,3 +1,5 @@
+@import url('./css/variables.css');
+
 .avatar_container {
     flex-wrap: wrap;
     gap: 20px;
@@ -55,7 +57,7 @@
     border: 2px solid var(--white);
     border-radius: 50%;
     font-weight: 700;
-    font-size: 70%;
+    font-size: 60%;
     right: 0rem;
     bottom: 1rem;
 }
@@ -98,6 +100,19 @@
     min-width: 0.5rem;
     right: -0.2rem;
     bottom: 0.2rem;
+}
+
+.avatar_text, .avatar_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar_badges span {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 0.2rem;
 }
 
 .avatar .avatar_span {
