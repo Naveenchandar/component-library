@@ -1,5 +1,3 @@
-@import url('./css/variables.css');
-
 .avatar_container {
     flex-wrap: wrap;
     gap: 20px;
